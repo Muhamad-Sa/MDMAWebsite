@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background: url('Background.jpg') no-repeat center center fixed; /* Background image */
+    background: url('shoppingcartbackground.jpg') no-repeat center center fixed; /* Background image */
     background-size: cover; /* Ensures the background image covers the whole page */
     background-color: #f4f4f4; /* Fallback color */
     margin: 0;
@@ -33,12 +33,11 @@ header {
     font-weight: bold;
 }
 
-
 nav {
     flex-grow: 1;
 }
 
-nav ul {
+.nav-links {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -174,100 +173,6 @@ main {
     }
 }
 
-/* Categories Section */
-#categories {
-    display: flex;
-    justify-content: space-around;
-    margin: 2rem 0;
-    padding: 0 2rem;
-}
-
-.category {
-    flex: 1;
-    margin: 0 1rem;
-    padding: 2rem;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    text-align: center;
-    color: #fff;
-    background-size: cover; /* Ensure the background image covers the entire div */
-    background-position: center;
-    height: 300px; /* Adjust height as needed */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.category#men {
-    background: url('mans.jpg') no-repeat center center/cover;
-}
-
-.category#women {
-    background: url('women.jpg') no-repeat center center/cover;
-}
-
-.category#kids {
-    background: url('kids.jpg') no-repeat center center/cover;
-}
-
-.category h2 {
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
-}
-
-.category p {
-    display: none; /* Hide descriptions by default */
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-}
-
-.category.active p {
-    display: block; /* Show description when category is active */
-}
-
-.category:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Help Center Section */
-#help-center {
-    text-align: center;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px; /* Centering and width control */
-}
-
-#help-center p {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    color: #333;
-}
-
-#help-center button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    font-size: 1.1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-#help-center button:hover {
-    background-color: #ff9900;
-    transform: translateY(-2px);
-}
-
-#help-center button:active {
-    background-color: #ff9900;
-    transform: translateY(1px);
-}
-
 /* Footer Styling */
 footer {
     background-color: #333;
@@ -284,4 +189,16 @@ footer .footer-links a, footer .social-media a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
+}
+
+footer .footer-links a:hover, footer .social-media a:hover {
+    color: #ff9900;
+}
+
+footer .contact-info p {
+    margin: 5px 0;
+}
+
+.hidden {
+    display: none;
 }
