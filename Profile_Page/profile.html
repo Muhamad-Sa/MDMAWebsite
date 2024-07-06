@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Online Store</title>
-    <link rel="stylesheet" href="Homepagestyle.css">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profilecss.css">
 </head>
 <body>
+  
     <header>
         <div class="logo">MDMA FASHION</div>
         <nav>
             <ul>
                 <li class="nav-links"><a href="#">Home</a></li>
-                <li class="nav-links"><a href="./Profile_Page/profile.html">Profile</a></li>
+                <li class="nav-links"><a href="#">Profile</a></li>
                 <li class="nav-links"><a href="#">Shop</a></li>
                 <li class="nav-links"><a href="#">About</a></li>
                 <li class="nav-links"><a href="#">Contact</a></li>
@@ -28,35 +29,25 @@
             <a href="shoppingcart.html">Cart (0)</a>
         </div>
     </header>
-    <main>
-        <section id="hero">
-            <h1>Welcome to Our Online Store</h1>
-            <p>Discover the best products for men, women, and kids.</p>
-            <button>Shop Now</button>
-        </section>
-        <section id="categories">
-            <div class="category" id="men">
-                <h2>Men</h2>
-                <p>Explore our men's collection.</p>
-                <div class="dynamic-content"></div>
-            </div>
-            <div class="category" id="women">
-                <h2>Women</h2>
-                <p>Discover our women's collection.</p>
-                <div class="dynamic-content"></div>
-            </div>
-            <div class="category" id="kids">
-                <h2>Kids</h2>
-                <p>Find the best for kids.</p>
-                <div class="dynamic-content"></div>
-            </div>
-        </section>
 
-        <section id="help-center"> 
-            <p>Have a question? Well, we’ve got some answers.</p>
-            <button onclick="location.href='help.html'">Go to Help Centre</button>
-        </section>
-    </main>
+    <div class="container">
+        <div class="profile-container">
+            <h1>User Profile</h1>
+            <div class="profile-info">
+                <p><strong>Name:</strong> <span id="name"></span></p>
+                <p><strong>Email:</strong> <span id="email"></span></p>
+                <p><strong>Address:</strong> <span id="address"></span></p>
+            </div>
+            <button id="edit-profile-button">Edit Profile</button>
+            <div class="orders-container">
+                <h2>My Orders</h2>
+                <ul id="orders-list">
+                    <!-- Orders will be dynamically populated here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    
     <footer>
         <div class="footer-links">
             <a href="#">Privacy Policy</a>
@@ -73,6 +64,6 @@
             <a href="#">Instagram</a>
         </div>
     </footer>
-    <script src="Homepagescript.js"></script>
+    <script src="profilejs.js"></script>
 </body>
 </html>
