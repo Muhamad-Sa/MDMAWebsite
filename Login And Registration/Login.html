@@ -33,13 +33,13 @@
 		<div class="forms">
 			<div class="form login">
 				<span class="title">Login</span>
-				<form action="#">
+				<form id="loginForm"  action="#">
 					<div class="input-feild">
-                        <input type="text" placeholder="Enter your email" required>
+                        <input type="text"  id="email" placeholder="Enter your email" required>
 					    <i class="uil uil-envelope"></i>	    
 					</div>
 					<div class="input-feild">
-                        <input type="password" class="password"  placeholder="Enter your password" required>
+                        <input type="password" id="password" class="password"  placeholder="Enter your password" required>
 					    <i class="uil uil-lock icon"></i>
 					    <i class="uil uil-eye-slash showHidePw"></i>	    
 					</div>
@@ -56,7 +56,7 @@
 					</div>
 
 					<div class="input-feild button">
-                        <input type="button" value="Login" >
+                        <input type="button"  onclick="validateForm()" value="Login" >
 					</div>
 
 
@@ -65,7 +65,7 @@
 
 				<div class="login-signup">
 					<span class="text"> Not a member?
-						<a href="Registeration.html" class="text signup-text">Signup now</a>
+						<a href="file:///media/mariam/Projects/Ecommerce%20Website%202nd%20Project/Auth/Registeration.html" class="text signup-text">Signup now</a>
 					</span>
 
 
