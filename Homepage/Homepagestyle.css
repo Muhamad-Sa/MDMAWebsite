@@ -1,3 +1,5 @@
+/* Add the following CSS to your existing stylesheet */
+
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +35,6 @@ header {
     font-weight: bold;
 }
 
-
 nav {
     flex-grow: 1;
 }
@@ -57,6 +58,39 @@ nav ul {
     color: #333;
     background-color: #ff9900;
     border-radius: 5px;
+}
+
+/* Dropdown styling */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    padding: 12px 16px;
+}
+
+.dropdown-content li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content li a:hover {
+    background-color: #ff9900;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .search-container {
