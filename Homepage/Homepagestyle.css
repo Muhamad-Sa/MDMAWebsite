@@ -303,19 +303,87 @@ main {
 }
 
 /* Footer Styling */
-footer {
+.site-footer {
     background-color: #333;
-    color: white;
-    padding: 20px;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-footer .footer-links, footer .contact-info, footer .social-media {
-    margin: 10px 0;
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-footer .footer-links a, footer .social-media a {
-    color: white;
-    text-decoration: none;
+.social-icons {
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.social-icons::before,
+.social-icons::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    height: 1px;
+    background-color: #fff;
+}
+
+.social-icons::before {
+    left: -120px;
+}
+
+.social-icons::after {
+    right: -120px;
+}
+
+.social-icons a {
+    color: #fff;
     margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff9900;
+}
+
+.footer-logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    margin-top: 10px;
+}
+
+.footer-text p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #ff9900;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
 }
