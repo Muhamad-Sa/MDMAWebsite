@@ -94,10 +94,6 @@ nav {
     border-radius: 5px;
 }
 
-/* Main Content */
-main {
-    padding-top: 100px; /* To prevent overlap with fixed header */
-}
 
 #hero {
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
@@ -105,7 +101,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     color: #fff;
     text-align: right;
     padding: 2rem;
