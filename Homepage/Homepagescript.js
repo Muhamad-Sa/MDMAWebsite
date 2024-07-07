@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     const categories = document.querySelectorAll('.category');
 
