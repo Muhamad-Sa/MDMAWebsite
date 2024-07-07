@@ -137,7 +137,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     color: #fff;
     text-align: right;
     padding: 2rem;
