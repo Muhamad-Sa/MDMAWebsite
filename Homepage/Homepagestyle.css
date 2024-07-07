@@ -1,5 +1,3 @@
-/* Add the following CSS to your existing stylesheet */
-
 * {
     margin: 0;
     padding: 0;
@@ -377,7 +375,7 @@ nav ul {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
