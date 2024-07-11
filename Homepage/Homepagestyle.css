@@ -7,7 +7,9 @@
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background: url('background.jpg') no-repeat center center fixed;
+    height: 100vh;
     background-size: cover;
+    background-position: center center;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
@@ -212,6 +214,8 @@ nav ul {
     }
 }
 
+
+
 #categories {
     display: flex;
     justify-content: space-around;
@@ -363,7 +367,7 @@ nav ul {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
@@ -546,4 +550,81 @@ nav ul {
     #help-center {
         width: 95%;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero-items {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    color: #000;
+    text-align: center;
+    position: relative;
+}
+
+.cont-items {
+    background-color: #fff;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center !important;
+}
+
+.cont-1, .cont-2, .cont-3 {
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.cont-1 img, .cont-2 img, .cont-3 img {
+    width: 100%;
+    height: auto;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }

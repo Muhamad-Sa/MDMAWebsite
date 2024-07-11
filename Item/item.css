@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.product-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.swiper-container {
+    width: 40%;
+    height: 600px; /* Adjust height as needed */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.product-info {
+    width: 45%;
+    padding-right: 20px;
+}
+
+.product-info h1 {
+    font-size: 2em;
+}
+
+.product-info .price {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.product-info .colors, .product-info .model, .product-info .measurements, .product-info .ref, .product-info .description {
+    margin: 10px 0;
+}
+
+form {
+    margin: 20px 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form select {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+form button.add-to-basket {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.sidebar {
+    width: 15%;
+    padding-left: 20px;
+}
+
+.sidebar p {
+    margin: 20px 0;
+}

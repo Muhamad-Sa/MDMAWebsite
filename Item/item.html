@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleeveless halter midi dress</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="item.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Navigation Menu -->
+        </nav>
+    </header>
+    <main>
+        <section class="product-details">
+            <div class="swiper-container image-gallery">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="1.jpg" alt="Sleeveless halter midi dress"></div>
+                    <div class="swiper-slide"><img src="2.jpg" alt="Sleeveless halter midi dress"></div>
+                    <div class="swiper-slide"><img src="3.jpg" alt="Sleeveless halter midi dress"></div>
+                    <div class="swiper-slide"><img src="4.jpg" alt="Sleeveless halter midi dress"></div>
+                    <div class="swiper-slide"><img src="5.jpg" alt="Sleeveless halter midi dress"></div>
+                    <div class="swiper-slide"><img src="6.jpg" alt="Sleeveless halter midi dress"></div>
+                    <div class="swiper-slide"><img src="7.jpg" alt="Sleeveless halter midi dress"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="product-info">
+                <h1>Sleeveless halter midi dress</h1>
+                <p class="price">EGP 1,090</p>
+                <p class="colors">4 Colours</p>
+                <p class="model">Model: 174 cm tall and size S</p>
+                <p class="measurements">See measurements <a href="#">Now</a></p>
+                <form>
+                    <label for="size">Size</label>
+                    <select id="size">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <button type="submit" class="add-to-basket">Add to my basket</button>
+                </form>
+                <div class="product-meta">
+                    <p class="ref">Ref 7390232</p>
+                    <p class="description">Midi dress with a boat neck, round neck and gathered detail on the sides. Made of stretch fabric.</p>
+                </div>
+            </div>
+            <aside class="sidebar">
+                <p>Composition and care</p>
+                <p>Share</p>
+                <p>Availability in store</p>
+                <p>Shipping and returns</p>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <!-- Footer Content -->
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            loop: false,
+            mousewheel: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
