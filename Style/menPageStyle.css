@@ -316,3 +316,47 @@ nav ul {
 #swimwear {
     display: none;
 }
+
+
+
+
+
+
+
+/* Search for item style */
+
+.search-container {
+    position: relative;
+  }
+  
+  .search-results {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .search-results a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .search-results a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .search-results img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
