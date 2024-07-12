@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background: url('shoppingcartbackground.jpg') no-repeat center center fixed; /* Background image */
+    background: url('/Html/images/shoppingcartbackground.jpg') no-repeat center center fixed; /* Background image */
     background-size: cover; /* Ensures the background image covers the whole page */
     background-color: #f4f4f4; /* Fallback color */
     margin: 0;

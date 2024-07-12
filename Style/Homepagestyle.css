@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background: url('background.jpg') no-repeat center center fixed;
+    background: url('/Html/images/background.jpg') no-repeat center center fixed;
     height: 100vh;
     background-size: cover;
     background-position: center center;
@@ -240,15 +240,15 @@ nav ul {
 }
 
 .category#men {
-    background: url('mans.jpg') no-repeat center center/cover;
+    background: url('/Html/images/mans.jpg') no-repeat center center/cover;
 }
 
 .category#women {
-    background: url('women.jpg') no-repeat center center/cover;
+    background: url('/Html/images/women.jpg') no-repeat center center/cover;
 }
 
 .category#kids {
-    background: url('kids.jpg') no-repeat center center/cover;
+    background: url('/Html/images/kids.jpg') no-repeat center center/cover;
 }
 
 .category h2 {

@@ -6,11 +6,7 @@
     <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
     <title>Sleeveless halter midi dress</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="item.css" />
+    <link rel="stylesheet" href="../Style/item.css" />
   </head>
   <body>
     <header>
@@ -18,27 +14,20 @@
         <nav>
             <ul>
                 <li class="nav-links"><a href="home.html">Home</a></li>
-                <li class="nav-links"><a href="../Profile/profile.html">Profile</a></li>
-                <li class="nav-links dropdown">
-                    <a href="#">Categories</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#men">Men</a></li>
-                        <li><a href="#women">Women</a></li>
-                        <li><a href="#kids">Kids</a></li>
-                    </ul>
-                </li>
+                <li class="nav-links"><a href="profile.html">Profile</a></li>
+                <li class="nav-links"><a href="#">Categories</a></li>
                 <li class="nav-links"><a href="#">About</a></li>
-                <li class="nav-links"><a href="../Contactpage/Contact.html">Contact</a></li>
+                <li class="nav-links"><a href="Contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="search-container">
             <input type="text" placeholder="Search for anything">
         </div>
         <div class="nav-links user-account">
-            <a href="../Login And Registration/Login.html">Login/Register</a>
+            <a href="Login.html">Login/Register</a>
         </div>
         <div class="nav-links shopping-cart">
-            <a href="../Shopping Cart/shoppingcart.html">Cart (0)</a>
+            <a href="shoppingcart.html">Cart (0)</a>
         </div>
         <button class="burger-menu" aria-label="Toggle navigation">
             ☰
@@ -53,14 +42,12 @@
       <section class="product-details">
         <div class="container">
             <div class="slider">
-                <div class="slides">
-                    <img class="slide" src="1.jpg" alt="Sleeveless halter midi dress" />
-                    <img class="slide" src="2.jpg" alt="Sleeveless halter midi dress" />
-                    <img class="slide" src="3.jpg" alt="Sleeveless halter midi dress" />
-                    <img class="slide" src="4.jpg" alt="Sleeveless halter midi dress" />
-                    <img class="slide" src="5.jpg" alt="Sleeveless halter midi dress" />
-                    <img class="slide" src="6.jpg" alt="Sleeveless halter midi dress" />
-                    <img class="slide" src="7.jpg" alt="Sleeveless halter midi dress" />
+                <div id="image-container" class="slides">
+                    <img class="slide" src="images/1.jpg" alt="Sleeveless halter midi dress" />
+                    <img class="slide" src="images/2.jpg" alt="Sleeveless halter midi dress" />
+                    <img class="slide" src="images/3.jpg" alt="Sleeveless halter midi dress" />
+                    <img class="slide" src="images/4.jpg" alt="Sleeveless halter midi dress" />
+                    <img class="slide" src="images/5.jpg" alt="Sleeveless halter midi dress" />
                 </div>
                 <button class="prev" onclick="prevSlide()">&#10094</button>
                 <button class="next" onclick="nextSlide()">&#10095</button>
@@ -68,10 +55,10 @@
         </div>
         <div class="product-info">
             <div class="text">
-            <h1>Sleeveless halter midi dress</h1>
-            <p class="price">EGP 1,090</p>
-            <p class="colors">4 Colours</p>
-            <p class="model">Model: 174 cm tall and size S</p>
+            <h1 id="item-name">Sleeveless halter midi dress</h1>
+            <p id="item-price" class="price">EGP 1,090</p>
+            <p id="item-colors" class="colors">4 Colours</p>
+            <p id="model-desc" class="model">Model: 174 cm tall and size S</p>
             </div>
             <form>
             <label for="size">Size</label>
@@ -90,8 +77,8 @@
             </form>
             <div class="product-meta">
                 <div class="ref">
-                <p class="ref">Ref 7390232</p>
-                <p class="description">
+                <p id="ref-num" class="ref">Ref 7390232</p>
+                <p id="item-description" class="description">
                 Midi dress with a boat neck, round neck and gathered detail on the
                 sides. Made of stretch fabric.
                 </p>
@@ -109,7 +96,6 @@
     <footer>
       <!-- Footer Content -->
     </footer>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="item.js"></script>
+    <script src="../Script/item.js"></script>
   </body>
 </html>
