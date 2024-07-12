@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sleeveless halter midi dress</title>
+    <link rel="stylesheet" href="../Style/item.css" />
+  </head>
+  <body>
+    <header>
+        <div class="logo">MDMA FASHION</div>
+        <nav>
+            <ul>
+                <li class="nav-links"><a href="home.html">Home</a></li>
+                <li class="nav-links"><a href="profile.html">Profile</a></li>
+                <li class="nav-links"><a href="#">Categories</a></li>
+                <li class="nav-links"><a href="#">About</a></li>
+                <li class="nav-links"><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search for anything">
+        </div>
+        <div class="nav-links user-account">
+            <a href="Login.html">Login/Register</a>
+        </div>
+        <div class="nav-links shopping-cart">
+            <a href="shoppingcart.html">Cart (0)</a>
+        </div>
+        <button class="burger-menu" aria-label="Toggle navigation">
+            ☰
+        </button>
+        <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <main>
+      <section class="product-details">
+        <div class="container">
+            <div class="slider">
+                  <div id="image-container" class="slides">
+
+                  </div>
+                <button class="prev" onclick="prevSlide()">&#10094</button>
+                <button class="next" onclick="nextSlide()">&#10095</button>
+            </div>
+        </div>
+        <div class="product-info">
+            <div class="text">
+            <h1 id="item-name">Sleeveless halter midi dress</h1>
+            <p id="item-price" class="price">EGP 1,090</p>
+            <p id="item-colors" class="colors">4 Colours</p>
+            <p id="model-desc" class="model">Model: 174 cm tall and size S</p>
+            </div>
+            <form>
+            <label for="size">Size</label>
+            <div class="size-dropdown">
+                <select id="size-select">
+                  <option value="xs">XS</option>
+                  <option value="s">S</option>
+                  <option value="m">M</option>
+                  <option value="l">L</option>
+                  <option value="xl">XL</option>
+                </select>
+            </div>
+            <button type="submit" class="add-to-basket">
+              Add to my basket
+            </button>
+            </form>
+            <div class="product-meta">
+                <div class="ref">
+                <p id="ref-num" class="ref">Ref 7390232</p>
+                <p id="item-description" class="description">
+                Midi dress with a boat neck, round neck and gathered detail on the
+                sides. Made of stretch fabric.
+                </p>
+                </div>
+                <div class="sidebar">
+                    <p>Composition and care</p>
+                    <p>Share</p>
+                    <p>Availability in store</p>
+                    <p>Shipping and returns</p>
+                </div>
+            </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="../Script/item.js"></script>
+  </body>
+</html>
