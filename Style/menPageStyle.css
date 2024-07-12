@@ -135,6 +135,7 @@ nav ul {
 
 .slider li {
     padding: 10px 0;
+    cursor: pointer;
 }
 
 /* Main content styles */
@@ -292,4 +293,26 @@ nav ul {
 
 .footer-links a:hover {
     text-decoration: underline;
+}
+
+#sweatshirts {
+    display: none;
+}
+#tshirts {
+    display: none;
+}
+#jeans {
+    display: none;
+}
+#shorts {
+    display: none;
+}
+#shirts {
+    display: none;
+}
+#jackets {
+    display: none;
+}
+#swimwear {
+    display: none;
 }

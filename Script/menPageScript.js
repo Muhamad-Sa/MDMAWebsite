@@ -42,4 +42,39 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+
+    function passItemData(event, itemId) {
+        event.preventDefault();
+    
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                const itemData = data[itemId];  // Get item data by ID
+    
+                // Store item data in sessionStorage for use in item.html
+                sessionStorage.setItem('itemData', JSON.stringify(itemData));
+    
+                // Navigate to item.html
+                window.location.href = 'item.html';
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    }
+
 });
+
+function showSection(sectionId) {
+    console.log('showSection called with id:', sectionId); // Debugging line
+    // Hide all sections
+    const sections = document.querySelectorAll('div > section');
+    sections.forEach(section => {
+        section.style.display = 'none';
+    });
+
+    // Show the selected section
+    const selectedSection = document.getElementById(sectionId);
+    selectedSection.style.display = 'grid'; // or 'grid' if preferred
+}
+
+// Initially show the first section
+document.getElementById('newcollcetion').style.display = 'grid';

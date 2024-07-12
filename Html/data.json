@@ -49,6 +49,126 @@
         "images/14.jpg",
         "images/15.jpg"
       ]
+    },
+
+    {
+      "id": 3,
+      "name": " Basic hoodie ",
+      "price": "EGP 899",
+      "colors": 2,
+      "modelDesc": "Model: 185 cm tall and size XL",
+      "refNum": "Ref 8591513",
+      "description": " Basic long sleeve hoodie available in assorted colours, with a front pouch pocket, featuring a logo detail on the hem. Made of cotton blend. ",
+      "images": [
+        "images/hoodi1.jpg"
+      ]
+    },
+
+    {
+      "id": 4,
+      "name": " NFL Forty Niners hoodie",
+      "price": "EGP 1,299",
+      "colors": 2,
+      "modelDesc": "Model: 190 cm tall and size XL",
+      "refNum": "Ref 3590562 ",
+      "description": " NFL Forty Niners American football team license hoodie, with a drawstring hood, long sleeves, a pouch pocket and print detail.",
+      "images": [
+        "images/hoodi2.jpg"
+      ]
+    },
+
+    {
+      "id": 5,
+      "name": " Pull&Bear logo hoodie",
+      "price": "EGP 899",
+      "colors": 2,
+      "modelDesc": "Model: 187 cm tall and size XL",
+      "refNum": "Ref 7592701 ",
+      "description": " Sweatshirt with a contrast Pull&Bear logo, round neck and long sleeves. ",
+      "images": [
+        "images/hoodi3.jpg"
+      ]
+    },
+
+
+    {
+      "id": 6,
+      "name": " Plush short sleeve T-shirt with raised design ",
+      "price": "EGP 1,990",
+      "colors": 2,
+      "modelDesc": "Model: 183 cm tall and size L",
+      "refNum": "Ref 3590719",
+      "description": " Plush round neck short sleeve T-shirt with raised slogan detail. ",
+      "images": [
+        "images/tshirt1.jpg"
+      ]
+    },
+
+    {
+      "id": 7,
+      "name": " Baggy skater cargo jeans ",
+      "price": "EGP 2,990",
+      "colors": 2,
+      "modelDesc": "Model: 183 cm tall and size 42",
+      "refNum": "Ref 3684507",
+      "description": " Baggy skater cargo jeans with flap pockets on the leg, belt loops and zip fly and top button fastening. ",
+      "images": [
+        "images/jeans.jpg"
+      ]
+    },
+
+    {
+      "id": 8,
+      "name": " Interlock jogger Bermuda shorts",
+      "price": "EGP 1,490",
+      "colors": 2,
+      "modelDesc": "Model: 190 cm tall and size L",
+      "refNum": "Ref 3690508",
+      "description": " Interlock jogger Bermuda shorts with pockets, a panelled detail and an elasticated waistband. Made of stretch fabric. ",
+      "images": [
+        "images/shorts1.jpg"
+      ]
+    },
+
+    {
+      "id": 9,
+      "name": " Striped short sleeve poplin shirt",
+      "price": "EGP 2,190",
+      "colors": 2,
+      "modelDesc": "Model: 183 cm tall and size L",
+      "refNum": "Ref 3470556",
+      "description": " Short sleeve shirt in poplin fabric with a striped design and button-up front. Made of cotton. ",
+      "images": [
+        "images/shirt1.jpg"
+      ]
+    },
+
+    {
+      "id": 10,
+      "name": " Lightweight puffer jacket with hood",
+      "price": "EGP 2,190",
+      "colors": 2,
+      "modelDesc": "Model: 186 cm tall and size XL",
+      "refNum": "Ref 7710710",
+      "description": " Lightweight puffer jacket available in assorted colours, with a hood, side pockets and zip fastening. ",
+      "images": [
+        "images/jacket1.jpg"
+      ]
+    },
+
+    {
+      "id": 11,
+      "name": " STWD basic swim shorts with drawstring",
+      "price": "EGP 850",
+      "colors": 2,
+      "modelDesc": "Model: 185 cm tall and size L",
+      "refNum": "Ref 3710907",
+      "description": " STWD basic swim shorts with an adjustable drawstring waistband and side pockets. Available in different colours.",
+      "images": [
+        "images/siwm1.jpg"
+      ]
     }
+
+
   ]
   
