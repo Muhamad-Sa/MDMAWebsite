@@ -1,123 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MDMA</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/Style/Homepagestyle.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/Style/Homepagestyle.css" />
+  </head>
+  <body>
     <header>
-        <div class="logo">MDMA FASHION</div>
-        <nav>
-            <ul>
-                <li class="nav-links"><a href="home.html">Home</a></li>
-                <li class="nav-links"><a href="profile.html">Profile</a></li>
-                <li class="nav-links dropdown">
-                    <a href="#">Categories</a>
-                    <ul class="dropdown-content">
-                        <li><a href="menPage.html">Men</a></li>
-                        <li><a href="womenPage.html">Women</a></li>
-                        <li><a href="kidsPage.html">Kids</a></li>
-                    </ul>
-                </li>
-                <li class="nav-links"><a href="#">About</a></li>
-                <li class="nav-links"><a href="Contact.html">Contact</a></li>
+      <div class="logo">MDMA FASHION</div>
+      <nav>
+        <ul>
+          <li class="nav-links"><a href="home.html">Home</a></li>
+          <li class="nav-links"><a href="profile.html">Profile</a></li>
+          <li class="nav-links dropdown">
+            <a href="#">Categories</a>
+            <ul class="dropdown-content">
+              <li><a href="menPage.html">Men</a></li>
+              <li><a href="womenPage.html">Women</a></li>
+              <li><a href="kidsPage.html">Kids</a></li>
             </ul>
-        </nav>
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Search for anything">
-            <div id="searchResults" class="search-results"></div>
-        </div>
-        <div class="nav-links user-account">
-            <a href="Login.html">Login/Register</a>
-        </div>
-        <div class="nav-links shopping-cart">
-            <a href="shoppingcart.html">Cart (0)</a>
-        </div>
-
+          </li>
+          <li class="nav-links"><a href="#">About</a></li>
+          <li class="nav-links"><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for anything" />
+        <div id="searchResults" class="search-results"></div>
+      </div>
+      <div class="nav-links user-account">
+        <a href="Login.html">Login/Register</a>
+      </div>
+      <div class="nav-links shopping-cart">
+        <a href="shoppingcart.html">Cart (0)</a>
+      </div>
     </header>
     <main>
-        <section id="hero">
-            <h1>Welcome to Our Online Store</h1>
-            <p>Discover the best products for men, women, and kids.</p>
-            <button id="scrollButton">Shop Now</button>
-        </section>
-        <section id="categories">
-            <div class="category" id="men">
-                
-                <a href="menPage.html">Men</a>
-               
-                <div class="dynamic-content"></div>
-            </div>
-            <div class="category" id="women">
-               <a href="womenPage.html">Women</a>
-                <div class="dynamic-content"></div>
-            </div>
-            <div class="category" id="kids">
-                <a href="kidsPage.html">Kids</a>
-                <div class="dynamic-content"></div>
-            </div>
-        </section>
-        <section class="hero-items">
-            <div class="cont-items">
-                <div class="cont-1">
-                    <a href="item.html" onclick="passItemData(event, 0)">
-                        <img src="/Html/images/halter1.jpg" alt="Sleeveless halter midi dress">
-                        <h3>Sleeveless halter midi dress</h3>
-                        <p>EGP 1,090</p>
-                        <p>4 Colours</p>
-                    </a>
-                </div>
-                <div class="cont-2">
-                    <a href="item.html" onclick="passItemData(event, 1)">
-                        <img src="/Html/images/midi1.jpg" alt="Off-the-shoulder midi dress">
-                        <h3>Off-the-shoulder midi dress</h3>
-                        <p>EGP 2,290</p>
-                        <p>2 Colours</p>
-                    </a>
-                </div>
-                <div class="cont-3">
-                    <a href="item.html" onclick="passItemData(event, 2)">
-                        <img src="/Html/images/midi2.jpg" alt="Off-the-shoulder midi dress">
-                        <h3>Off-the-shoulder midi dress</h3>
-                        <p>EGP 2,290</p>
-                        <p>2 Colours</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section id="help-center"> 
-            <p>Have a question? Well, we’ve got some answers.</p>
-            <button onclick="location.href='help.html'">Go to Help Centre</button>
-        </section>
+      <section id="hero">
+        <h1>Welcome to Our Online Store</h1>
+        <p>Discover the best products for men, women, and kids.</p>
+        <button id="scrollButton">Shop Now</button>
+      </section>
+      <section id="categories">
+        <div class="category" id="men">
+          <div class="dynamic-content"></div>
+        </div>
+        <div class="category" id="women">
+          <div class="dynamic-content"></div>
+        </div>
+        <div class="category" id="kids">
+          <div class="dynamic-content"></div>
+        </div>
+      </section>
+      <section id="help-center">
+        <p>Have a question? Well, we’ve got some answers.</p>
+        <button onclick="location.href='home.html'">Go to Help Centre</button>
+      </section>
     </main>
     <footer class="site-footer">
-        <div class="footer-container">
-            <div class="social-icons">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-youtube"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-medium"></i></a>
-            </div>
-            <div class="footer-logo">
-                <a href="#">MDMA FASHION</a>
-            </div>
-            <div class="footer-text">
-                <p>Copyright &copy; 2024 MDMA, Inc.</p>
-                <div class="footer-links">
-                    <a href="#">Legal Stuff</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Security</a>
-                    <a href="#">Website Accessibility</a>
-                    <a href="#">Manage Cookies</a>
-                </div>
-            </div>
+      <div class="footer-container">
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-medium"></i></a>
         </div>
+        <div class="footer-logo">
+          <a href="#">MDMA FASHION</a>
+        </div>
+        <div class="footer-text">
+          <p>Copyright &copy; 2024 MDMA, Inc.</p>
+          <div class="footer-links">
+            <a href="#">Legal Stuff</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Security</a>
+            <a href="#">Website Accessibility</a>
+            <a href="#">Manage Cookies</a>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="/Script/Homepagescript.js"></script>
-</body>
+  </body>
 </html>
