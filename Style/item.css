@@ -35,20 +35,31 @@ main {
 
 .slider {
     position: relative;
-    flex: 0 0 50%;
-    max-width: 50%;
-    flex: 1; 
+    width: 100%;
+    max-width: 500px; /* Adjust as needed */
+    overflow: hidden; /* Ensure images stay within slider container */
 }
 
-.slider img {
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slides img {
     width: 100%;
-    display: none;
+    height: auto; /* Ensure images maintain aspect ratio */
+    object-fit: cover; /* Adjust image fitting within slide */
 }
 
 img.displaySlide{
     display: block;
     animation-name: fade;
     animation-duration: 1.5s;
+}
+
+.displaySlide {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .slider button{
