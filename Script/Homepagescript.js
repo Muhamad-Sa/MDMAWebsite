@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 description.style.display = 'none'; // Hide description
             }
         });
+
+        //shop now scroll button
         document.getElementById('scrollButton').addEventListener('click', function() {
             const productsSection = document.getElementById('categories');
             productsSection.scrollIntoView({ behavior: 'smooth' });
