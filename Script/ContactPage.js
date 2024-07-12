@@ -28,3 +28,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+
+// popup email massage
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Simulate form submission success
+    setTimeout(() => {
+        alert('Email sent successfully');
+        document.getElementById('contact-form').reset(); // Reset the form fields
+    }, 500); // Simulate a short delay to mimic form submission
+});
