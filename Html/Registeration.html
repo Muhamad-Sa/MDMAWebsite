@@ -38,7 +38,7 @@
 						</div>
 					</div>
 					<div class="input-feild button">
-                        <input type="button" onclick="handleSignUp(event)" id="signup-btn" value="Signup">
+                        <input type="button" id="signup-btn" value="Signup">
 					</div>
 				</form>
 
@@ -51,14 +51,6 @@
 		</div>
 
 	</div>
-   
-	<script type="module">
-		import {validateSignupForm} from "../Script/Authentication.js";
-		document.getElementById('signup-btn').addEventListener('click', function(e){
-			e.preventDefault();
-			validateSignupForm();
-		});
-	</script>
 	<script src="../Script/auth.js" type="module"></script>
 	<script src="../Script/Authentication.js" type="module"></script>
 </body>
