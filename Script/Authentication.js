@@ -22,7 +22,6 @@ export function validateForm() {
 
     // If everything is filled out correctly, submit the form.
     login(email.value, password.value);
-    document.getElementById('loginForm').submit();
 }
 
 export function validateSignupForm() {
@@ -70,7 +69,6 @@ export function validateSignupForm() {
 
     // If everything is filled out correctly, submit the form.
     signUp(name.value, email.value, password.value);
-    document.getElementById('signupForm').submit();
 }
 
 // show/hide password
@@ -104,11 +102,24 @@ pwShowHide.forEach(eyeIcon => {
 })
 
 
+const loginBtn = document.getElementById("login-btn");
+const signupBtn = document.getElementById("signup-btn");
+
+if (loginBtn) {
+    loginBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        validateForm();
+    });
+}
+if (signupBtn) {
+    signupBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        validateSignupForm();
+    });
+}
 
 
-
-
-
+/**
 
 document.addEventListener('DOMContentLoaded', () => {
     function handleSignUp(event) {
@@ -157,3 +168,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Attach the event handler to the button
     document.querySelector('.input-field.button input[type="button"]').addEventListener('click', handleSignUp);
 });
+*/
