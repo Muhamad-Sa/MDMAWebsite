@@ -8,55 +8,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Profile</title>
 
-    <link rel="stylesheet" href="/Style/user.css">
+    <link rel="stylesheet" href="../Style/user.css">
+    <link rel="stylesheet" href="../Style/Homepagestyle.css">
 
 </head>
 
 <body>
-
+    <header>
+        <div class="logo">MDMA FASHION</div>
+        <nav>
+            <ul>
+                <li class="nav-links"><a href="./home.html">Home</a></li>
+                <li class="nav-links"><a href="./user.html">Profile</a></li>
+                <li class="nav-links dropdown">
+                    <a href="#">Categories</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#men">Men</a></li>
+                        <li><a href="#women">Women</a></li>
+                        <li><a href="#kids">Kids</a></li>
+                    </ul>
+                </li>
+                <li class="nav-links"><a href="#">About</a></li>
+                <li class="nav-links"><a href="./Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search for anything">
+        </div>
+        <div class="nav-links user-account">
+            <a href="./Login.html" id="auth-link">Login/Register</a>
+        </div>
+        <div class="nav-links shopping-cart">
+            <a href="./shoppingcart.html">Cart (0)</a>
+        </div>
+        <button class="burger-menu" aria-label="Toggle navigation">
+            ☰
+        </button>
+        <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
     <div class="update-profile">
-
         <form action="" method="post" enctype="multipart/form-data" id="profile-form">
-
             <div class="image-container">
-              <img class="photo" src="/Html/images/mariam.jpeg" id="profile-pic">
-              <div class="edit-overlay">
-              <div class="edit-text">Edit Profile Picture</div>
-            </div>
+                <img class="photo" id="profile-pic">
+                <div class="edit-overlay">
+                    <div class="edit-text">Edit Profile Picture</div>
+                </div>
             </div>
             <input type="file" name="upfile" id="file-input">
 
-
             <div class="flex">
                 <div class="inputBox">
-                    <span>Username :</span>
-                    <input type="text" name="update_name" placeholder="Update Username" class="box" id="username">
-                    <span>Your Email :</span>
+                    <span>Full Name:</span>
+                    <input type="text" name="update_name" placeholder="Update Full Name" class="box" id="username">
+                    <span>Your Email:</span>
                     <input type="email" name="update_email" placeholder="Update Email" class="box" id="email">
-                    <span>Your Phone :</span>
-                    <input type="phone" name="update_phone" placeholder="Update Number" minlength="10" class="box" id="phone">
+                    <span>Your Phone:</span>
+                    <input type="phone" name="update_phone" placeholder="Update Number" minlength="10" class="box"
+                        id="phone">
                 </div>
+
                 <div class="inputBox">
                     <input type="hidden" name="old_pass">
-                    <span>Old Password :</span>
-                    <input type="password" name="update_pass" placeholder="Enter previous password" class="box" required id="old-password">
-                    <span>New Password :</span>
-                    <input type="password" name="new_pass" placeholder="Enter new password" minlength="8" class="box" required id="new-password">
-                    <span>Confirm Password :</span>
-                    <input type="password" name="confirm_pass" placeholder="Confirm new password" class="box" required id="confirm-password">
+                    <span>Old Password:</span>
+                    <input type="password" name="update_pass" placeholder="Enter previous password" class="box"
+                        id="old-password">
+                    <span>New Password:</span>
+                    <input type="password" name="new_pass" placeholder="Enter new password" minlength="8" class="box"
+                        id="new-password">
+                    <span>Confirm Password:</span>
+                    <input type="password" name="confirm_pass" placeholder="Confirm new password" class="box"
+                        id="confirm-password">
                 </div>
             </div>
             <input type="submit" value="Update Profile" name="update_profile" class="btn" id="submit-btn">
-            <a href="../food/index2.html" class="delete-btn">Logout</a>
+            <a class="delete-btn">Logout</a>
         </form>
-
     </div>
 
-<script src="/Script/user.js">
-
-
-</script>
-
+    <script src="../Script/user.js"></script>
+    <script src="../Script/auth.js" type="module"></script>
+    <script src="../Script/updateprofile.js" type="module"></script>
 </body>
 
 </html>

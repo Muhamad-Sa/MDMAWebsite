@@ -24,7 +24,7 @@
 }
 
 .update-profile {
-    background-image: url(img3.jpeg);
+    background-image: url('../Html/images/img3.jpeg');
     height: 100vh;
     display: flex;
     align-items: center;
