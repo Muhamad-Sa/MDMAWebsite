@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MDMA</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../Style/Homepagestyle.css">
+    <link rel="stylesheet" href="/Style/Homepagestyle.css">
 </head>
 <body>
     <header>
         <div class="logo">MDMA FASHION</div>
         <nav>
             <ul>
-                <li class="nav-links"><a href="../Html/home.html">Home</a></li>
-                <li class="nav-links"><a href="../Profile/profile.html">Profile</a></li>
+                <li class="nav-links"><a href="home.html">Home</a></li>
+                <li class="nav-links"><a href="profile.html">Profile</a></li>
                 <li class="nav-links dropdown">
                     <a href="#">Categories</a>
                     <ul class="dropdown-content">
@@ -59,6 +59,34 @@
                 <div class="dynamic-content"></div>
             </div>
         </section>
+        <section class="hero-items">
+            <div class="cont-items">
+                <div class="cont-1">
+                    <a href="item.html" onclick="passItemData(event, 0)">
+                        <img src="/Html/images/halter1.jpg" alt="Sleeveless halter midi dress">
+                        <h3>Sleeveless halter midi dress</h3>
+                        <p>EGP 1,090</p>
+                        <p>4 Colours</p>
+                    </a>
+                </div>
+                <div class="cont-2">
+                    <a href="item.html" onclick="passItemData(event, 1)">
+                        <img src="/Html/images/midi1.jpg" alt="Off-the-shoulder midi dress">
+                        <h3>Off-the-shoulder midi dress</h3>
+                        <p>EGP 2,290</p>
+                        <p>2 Colours</p>
+                    </a>
+                </div>
+                <div class="cont-3">
+                    <a href="item.html" onclick="passItemData(event, 2)">
+                        <img src="/Html/images/midi2.jpg" alt="Off-the-shoulder midi dress">
+                        <h3>Off-the-shoulder midi dress</h3>
+                        <p>EGP 2,290</p>
+                        <p>2 Colours</p>
+                    </a>
+                </div>
+            </div>
+        </section>
         <section id="help-center"> 
             <p>Have a question? Well, we’ve got some answers.</p>
             <button onclick="location.href='help.html'">Go to Help Centre</button>
@@ -89,6 +117,6 @@
             </div>
         </div>
     </footer>
-    <script src="Homepagescript.js"></script>
+    <script src="/Script/Homepagescript.js"></script>
 </body>
 </html>
