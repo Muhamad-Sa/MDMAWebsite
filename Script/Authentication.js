@@ -22,7 +22,6 @@ export function validateForm() {
 
     // If everything is filled out correctly, submit the form.
     login(email.value, password.value);
-    document.getElementById('loginForm').submit();
 }
 
 export function validateSignupForm() {
@@ -70,7 +69,6 @@ export function validateSignupForm() {
 
     // If everything is filled out correctly, submit the form.
     signUp(name.value, email.value, password.value);
-    document.getElementById('signupForm').submit();
 }
 
 // show/hide password
@@ -102,3 +100,72 @@ pwShowHide.forEach(eyeIcon => {
     })
 
 })
+
+
+const loginBtn = document.getElementById("login-btn");
+const signupBtn = document.getElementById("signup-btn");
+
+if (loginBtn) {
+    loginBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        validateForm();
+    });
+}
+if (signupBtn) {
+    signupBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        validateSignupForm();
+    });
+}
+
+
+/**
+
+document.addEventListener('DOMContentLoaded', () => {
+    function handleSignUp(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Collect form data
+        const username = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const password = document.getElementById('password').value.trim();
+
+        // Basic form validation (customize as needed)
+        if (username === '' || email === '' || password === '') {
+            alert('Please fill out all fields.');
+            return;
+        }
+
+        // Create user object
+        const newUser = {
+            name: username,
+            email: email,
+            password: password
+        };
+
+        // Retrieve existing users data from localStorage
+        let users = JSON.parse(localStorage.getItem('users')) || [];
+
+        // Assign a unique ID to the new user
+        newUser.id = users.length > 0 ? users[users.length - 1].id + 1 : 0;
+
+        // Add the new user to the array
+        users.push(newUser);
+
+        // Save updated users data back to localStorage
+        localStorage.setItem('users', JSON.stringify(users));
+
+        // Reset the form fields
+        document.getElementById('signupForm').reset();
+
+        // Redirect to profile.html after successful signup
+        window.location.href = 'profile.html';
+
+        // Provide feedback to the user (optional)
+        alert('Sign up successful!');
+    }
+
+    // Attach the event handler to the button
+    document.querySelector('.input-field.button input[type="button"]').addEventListener('click', handleSignUp);
+});
+*/
