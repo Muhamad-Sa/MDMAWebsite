@@ -310,25 +310,25 @@ nav ul {
     text-decoration: underline;
 }
 
-#sweatshirts {
+#dresses {
     display: none;
 }
-#tshirts {
+#tops {
     display: none;
 }
 #jeans {
     display: none;
 }
+#hoodis {
+    display: none;
+}
+#skirts {
+    display: none;
+}
 #shorts {
     display: none;
 }
-#shirts {
-    display: none;
-}
-#jackets {
-    display: none;
-}
-#swimwear {
+#suits {
     display: none;
 }
 
