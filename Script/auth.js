@@ -21,7 +21,6 @@ const storage = getStorage(app);
 
 export const signUp = async (name, email, password) => {
     try {
-        console.log("inside signUp function: ", name, email, password); // debug
         const userCredential = await createUserWithEmailAndPassword(auth, email, password);
         const user = userCredential.user;
         await setDoc(doc(db, 'users', user.uid), {
