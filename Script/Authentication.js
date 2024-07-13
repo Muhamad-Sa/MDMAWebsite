@@ -1,4 +1,4 @@
-import { login, signUp } from "./auth.js";
+import { login, signUp, forgetPassword } from "./auth.js";
 
 const container = document.querySelector(".container"),
     pwShowHide = document.querySelectorAll(".showHidePw"),
@@ -70,6 +70,15 @@ function validateSignupForm() {
     // If everything is filled out correctly, submit the form.
     signUp(name.value, email.value, password.value);
 }
+function validatePasswordResetForm(){
+    const email = document.getElementById('email');
+    if (!email.value) {
+        alert('Please fill out the email field.');
+        email.focus();
+        return false;
+    }
+    forgetPassword(email.value);
+}
 
 // show/hide password
 
@@ -100,7 +109,7 @@ pwShowHide.forEach(eyeIcon => {
 
 const loginBtn = document.getElementById("login-btn");
 const signupBtn = document.getElementById("signup-btn");
-
+const resetBtn = document.getElementById("reset-btn");
 if (loginBtn) {
     loginBtn.addEventListener("click", function (e) {
         e.preventDefault();
@@ -111,5 +120,11 @@ if (signupBtn) {
     signupBtn.addEventListener("click", function (e) {
         e.preventDefault();
         validateSignupForm();
+    });
+}
+if(resetBtn) {
+    resetBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        validatePasswordResetForm();
     });
 }

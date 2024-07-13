@@ -1,6 +1,6 @@
 import { getFirestore, doc, getDoc, setDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.js";
 import { getStorage, ref, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-storage.js";
-import { getAuth, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, updatePassword, updateEmail, signOut } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
+import { getAuth, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, updatePassword, updateEmail, signOut, sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
 
 
@@ -45,7 +45,7 @@ export const login = async (email, password) => {
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
-            
+
             alert(`Error: ${errorMessage}`);
         });
 };
@@ -77,6 +77,16 @@ export const checkAuthState = () => {
             authLink.href = '../Html/Login.html';
         }
     });
+};
+
+export const forgetPassword = async (email) => {
+    try {
+        await sendPasswordResetEmail(auth, email);
+        window.location.href = '../Html/forgetpassword-done.html';
+    } catch (error) {
+        alert(`Error: ${error.message}`);
+        console.error('Error:', error.code, error.message);
+    }
 };
 
 // Function to upload profile picture
