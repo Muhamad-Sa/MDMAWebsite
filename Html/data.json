@@ -456,24 +456,58 @@
       "refNum": "Ref 3590371",
       "description": "",
       "images": [
-        "images/womenshort1.jpg"
+        "images/womenshort.jpg"
       ]
     },
 
     {
       "id": 37,
-      "name": "Denim cargo Bermuda shorts",
-      "price": "EGP 2,190",
+      "name": "Mid-waist denim shorts",
+      "price": "EGP 999",
       "modelDesc": "Model: 177 cm tall and size S",
       "refNum": "Ref 3590371",
-      "description": "",
+      "description": "Mid-waist denim shorts with turn-up hems, belt loops and a zip fly and",
       "images": [
-        "images/womenshort1.jpg"
+        "images/womenshort2.jpg"
       ]
-    }
+    },
 
+    {
+      "id": 38,
+      "name": "Mom fit ripped denim shorts",
+      "price": "EGP 999",
+      "modelDesc": "Model: 177 cm tall and size S",
+      "refNum": "Ref 3590371",
+      "description": "Mom fit denim shorts with rip details, frayed hems, a five-pocket design, belt loops and a zip fly and top button fastening.",
+      "images": [
+        "images/womenshort3.jpg"
+      ]
+  },
 
+  {
+    "id": 39,
+    "name": "Basic linen-blend waistcoat",
+    "price": "EGP 1,990",
+    "modelDesc": "Model: 177 cm tall and size S",
+    "refNum": "Ref 3590371",
+    "description": "Basic rustic waistcoat with button fastening. Made of a linen and",
+    "images": [
+      "images/suit1.jpg"
+    ]
+},
 
-
+{
+  "id": 40,
+  "name": "Basic rolled-up sleeve blazer",
+  "price": "EGP 2,490",
+  "modelDesc": "Model: 177 cm tall and size S",
+  "refNum": "Ref 3590371",
+  "description": "Basic plain roll-up blazer with button fastening, a tuxedo collar and flap pockets.",
+  "images": [
+    "images/suit2.jpg"
   ]
+}
+
+
+]
   
