@@ -102,7 +102,7 @@ main {
 
 
 #hero {
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    background: transparent;/* Semi-transparent dark overlay */
     min-height: calc(100vh - 80px); /* Ensure it covers the viewport minus header height */
     display: flex;
     flex-direction: column;
@@ -111,27 +111,31 @@ main {
     color: #fff;
     text-align: center; /* Center text horizontally */
     padding: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
 }
 
 #hero h1 {
     font-size: 3.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 50px;
     animation: fadeInDown 1s ease-in-out;
+    color: #333;
 }
 
-#hero p {
-    font-size: 1.8rem;
+#hero > p {
+    font-size: 1rem;
     max-width: 80%; /* Adjusted for better readability */
     margin-bottom: 2rem;
     line-height: 1.6;
     animation: fadeInUp 1.5s ease-in-out;
+    margin-bottom: 50px;
+
 }
 
 #hero button {
+    margin-top: 50px;
     padding: 1.2rem 2.5rem;
     font-size: 1.3rem;
-    background-color: #ff6347;
+    background-color: #333;
     color: #ffffff;
     border: none;
     cursor: pointer;
@@ -140,7 +144,7 @@ main {
 }
 
 #hero button:hover {
-    background-color: #e63946;
+    background-color: #ff9900;
     transform: scale(1.05);
 }
 
@@ -152,16 +156,41 @@ main {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    background-color: #f18614;
+    background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
     position: relative;
+    background-color: rgba(51, 51, 51, 0.5);
 }
 
+.cart-item:hover{
+    background-color: #e5c100;
+    transition: all 0.3s ease;
+}
+
+
 .cart-item h3 {
+    max-width: 500px;
+    width: 500px;
     font-size: 1.5rem;
-    color: #333;
-    margin: 0 0 10px 0;
+    color: black;
+}
+
+.cart-item h2 {
+    max-width: 200px;
+    width: 200px;
+    font-size: 1rem;
+    color: black;
+    text-align: left;
+}
+
+.cart-item p {
+    max-width: 200px;
+    width: 200px;
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .remove-item {
