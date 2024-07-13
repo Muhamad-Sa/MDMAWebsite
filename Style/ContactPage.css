@@ -115,6 +115,7 @@ main {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
 }
 
 #contact h1 {
@@ -196,7 +197,7 @@ main {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
     flex-shrink: 0;
