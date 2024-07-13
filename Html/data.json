@@ -300,7 +300,179 @@
       "images": [
         "images/swim3.jpg"
       ]
+    },
+
+       
+    {
+      "id": 24,
+      "name": "TBasic polyamide tank top",
+      "price": "EGP 650",
+      "modelDesc": "Model: 173 cm tall and size S",
+      "refNum": "Ref 3243370",
+      "description": "Basic sleeveless tank top with a round neckline. Made of stretch polyamide fabric.",
+      "images": [
+        "images/top1.jpg"
+      ]
+    },
+
+    {
+      "id": 25,
+      "name": "Top with asymmetric strap",
+      "price": "EGP 499",
+      "modelDesc": "Model: 173 cm tall and size S",
+      "refNum": "Ref 3243370",
+      "description": "Asymmetric top with triple strap detail. Made of slightly stretchy fabric.",
+      "images": [
+        "images/top2.jpg"
+      ]
+    },
+
+    {
+      "id": 26,
+      "name": "Ribbed tank top with wide straps",
+      "price": "EGP 650",
+      "modelDesc": "Model: 173 cm tall and size S",
+      "refNum": "Ref 3243370",
+      "description": "Round neck tank top in ribbed fabric with wide straps. Made of cotton.",
+      "images": [
+        "images/top3.jpg"
+      ]
+    },
+
+    {
+      "id": 27,
+      "name": "Basic mom jeans",
+      "price": "EGP 999",
+      "modelDesc": "Model: 177 cm tall and size 36",
+      "refNum": "Ref 7686330",
+      "description": "Basic mom jeans with a five-pocket design, belt loops, and a zip fly and top button fastening. Made from stiff 100% cotton fabric. Inseam length: 70.40 cm. Difference to the standard length model: Petite: - 7 cm; Tall: + 6 cm.",
+      "images": [
+        "images/womenjeans1.jpg"
+      ]
+    },
+
+    {
+      "id": 28,
+      "name": "High-waist mom jeans",
+      "price": "EGP 1,690",
+      "modelDesc": "Model: 180 cm tall and size 34",
+      "refNum": "Ref 7686330",
+      "description": "Basic high-waist mom jeans with a five-pocket design, belt loops, a zip fly and a top button fastening. Made of cotton. Inseam length: 70.30 cm.",
+      "images": [
+        "images/womenjeans2.jpg"
+      ]
+    },
+
+    {
+      "id": 29,
+      "name": "Mid-waist straight-leg jeans",
+      "price": "EGP 1,299",
+      "modelDesc": "Model: 180 cm tall and size 34",
+      "refNum": "Ref 7686330",
+      "description": "Straight-leg mid-rise jeans with a five-pocket design, belt loops, and zip fly and top button fastening. Made of cotton fabric.",
+      "images": [
+        "images/womenjeans3.jpg"
+      ]
+    },
+
+    {
+      "id": 30,
+      "name": "Washed-effect round neck sweatshirt",
+      "price": "EGP 799",
+      "modelDesc": "",
+      "refNum": "Ref 3590371",
+      "description": "Round neck sweatshirt in washed plush-effect fabric with piping and print detail.",
+      "images": [
+        "images/womenhoodi1.jpg"
+      ]
+    },
+
+    {
+      "id": 31,
+      "name": "Oversize hoodie",
+      "price": "EGP 799",
+      "modelDesc": "Model: 177 cm tall and size S",
+      "refNum": "Ref 3590371",
+      "description": "Oversize drawstring hoodie with pouch pocket and long sleeves.",
+      "images": [
+        "images/womenhoodi2.jpg"
+      ]
+    },
+
+    {
+      "id": 32,
+      "name": "Basic oversized hoodie",
+      "price": "EGP 799",
+      "modelDesc": "Model: 177 cm tall and size S",
+      "refNum": "Ref 3590371",
+      "description": "Basic long sleeve hoodie available in different colours with a front pouch pocket and oversize fit. Made of cotton..",
+      "images": [
+        "images/womenhoodi3.jpg"
+      ]
+    },
+
+    {
+      "id": 33,
+      "name": "Long gathered polyamide skirt",
+      "price": "EGP 1,490",
+      "modelDesc": "Model: 177 cm tall and size S",
+      "refNum": "Ref 3590371",
+      "description": "Long fitted skirt made of stretchy polyamide fabric with gathered detail",
+      "images": [
+        "images/skirt1.jpg"
+      ]
+    },
+
+
+    {
+      "id": 34,
+      "name": "Satin midi skirt",
+      "price": "EGP 2,190",
+      "modelDesc": "Model: 177 cm tall and size S",
+      "refNum": "Ref 3590371",
+      "description": "Satin midi skirt with a lace-trimmed waist.",
+      "images": [
+        "images/skirt2.jpg"
+      ]
+    },
+
+    {
+      "id": 35,
+      "name": "Extra-long denim skirt with slit",
+      "price": "EGP 1,599",
+      "modelDesc": "Model: 177 cm tall and size S",
+      "refNum": "Ref 3590371",
+      "description": "Mid-rise extra-long denim skirt featuring a front slit, belt loops, five pockets and a zip fly and button fastening. Made of cotton fabric.",
+      "images": [
+        "images/skirt3.jpg"
+      ]
+    },
+
+    {
+      "id": 36,
+      "name": "Denim cargo Bermuda shorts",
+      "price": "EGP 2,190",
+      "modelDesc": "Model: 177 cm tall and size S",
+      "refNum": "Ref 3590371",
+      "description": "",
+      "images": [
+        "images/womenshort1.jpg"
+      ]
+    },
+
+    {
+      "id": 37,
+      "name": "Denim cargo Bermuda shorts",
+      "price": "EGP 2,190",
+      "modelDesc": "Model: 177 cm tall and size S",
+      "refNum": "Ref 3590371",
+      "description": "",
+      "images": [
+        "images/womenshort1.jpg"
+      ]
     }
+
+
 
 
   ]

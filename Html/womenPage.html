@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Men Page</title>
+  <title>Women Page</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -26,7 +26,7 @@
           <ul class="dropdown-content">
             <li><a href="menPage.html">Men</a></li>
             <li><a href="womenPage.html">Women</a></li>
-            <li><a href="kidsPage.html">Kids</a></li>
+           
           </ul>
         </li>
         <li class="nav-links"><a href="#">About</a></li>
@@ -40,28 +40,29 @@
     <div class="nav-links user-account">
       <a href="Login.html" id="auth-link">Login/Register</a>
     </div>
-          <div class="nav-links shopping-cart">
-            <a href="shoppingcart.html">Cart (<span id="cart-count">0</span>)</a>
-        </div>
-
-</header>
-    <section class="sectionOne">
+    <div class="nav-links shopping-cart">
+      <a href="shoppingcart.html">Cart (<span id="cart-count">0</span>)</a>
+  </div>
+  </header>
+  <section class="sectionOne">
     <div id="carouselExampleIndicators" class="carousel slide">
 
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="images/SSJ.jpg" class="d-block w-100" alt="...">
+          <img src="images/womenslider4.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="images/Sweatshirts & hoodies.jpg" class="d-block w-100" alt="...">
+          <img src="images/womenslider2.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="images/jeans.jpg" class="d-block w-100" alt="...">
+          <img src="images/womenslider3.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="images/Shirts.jpg" class="d-block w-100" alt="...">
+          <img src="images/womenslider1.jpg" class="d-block w-100" alt="...">
         </div>
       </div>
+
+
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
         data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -84,13 +85,13 @@
         <h2>Categories</h2>
         <ul>
           <li onclick="showSection('newcollcetion')">New Collection</li>
-          <li onclick="showSection('sweatshirts')">Sweatshirts & hoodies</li>
-          <li onclick="showSection('tshirts')">T-shirts</li>
+          <li onclick="showSection('dresses')">Dresses</li>
+          <li onclick="showSection('tops')">Tops & Bodysuits</li>
           <li onclick="showSection('jeans')">Jeans</li>
+          <li onclick="showSection('hoodis')">Sweatshirts & Hoodies</li>
+          <li onclick="showSection('skirts')">Skirts</li>
           <li onclick="showSection('shorts')">Shorts</li>
-          <li onclick="showSection('shirts')">Shirts</li>
-          <li onclick="showSection('jackets')">Jackets</li>
-          <li onclick="showSection('swimwear')">Swimwear</li>
+          <li onclick="showSection('suits')">Blazers & Suits</li>
           <!-- Add more categories as needed -->
         </ul>
       </div>
@@ -100,142 +101,142 @@
 
       <section class="item-grid" id="newcollcetion">
         <h1>New Collection</h1>
+      
         <div class="item-card">
-          <a href="item.html" onclick="passItemData(event, 4)">
-            <img src="./images/hoodi2.jpg" alt="">
+          <a href="item.html" onclick="passItemData(event, 0)">
+            <img src="./images/1.jpg" alt="">
           </a>
         </div>
+
         <div class="item-card">
-          <a href="item.html" onclick="passItemData(event, 6)">
-            <img src="./images/tshirt1.jpg" alt="">
+          <a href="item.html" onclick="passItemData(event, 25)">
+            <img src="./images/top2.jpg" alt="">
           </a>
         </div>
+
         <div class="item-card">
-          <a href="item.html" onclick="passItemData(event, 7)">
-            <img src="./images/jeans1.jpg" alt="">
+          <a href="item.html" onclick="passItemData(event, 29)">
+            <img src="./images/womenjeans3.jpg" alt="">
           </a>
         </div>
+
         <div class="item-card">
-          <a href="item.html" onclick="passItemData(event, 8)">
-            <img src="./images/shorts1.jpg" alt="">
+          <a href="item.html" onclick="passItemData(event, 32)">
+            <img src="./images/womenhoodi3.jpg" alt="">
           </a>
         </div>
-        <div class="item-card">
-          <a href="item.html" onclick="passItemData(event, 9)">
-            <img src="./images/shirt1.jpg" alt="">
-          </a>
-        </div>
-        <div class="item-card">
-          <a href="item.html" onclick="passItemData(event, 10)">
-            <img src="./images/jacket1.jpg" alt="">
-          </a>
-        </div>
-        <div class="item-card">
-          <a href="item.html" onclick="passItemData(event, 11)">
-            <img src="./images/siwm1.jpg" alt="">
+
+                <div class="item-card">
+          <a href="item.html" onclick="passItemData(event, 35)">
+            <img src="./images/skirt3.jpg" alt="">
           </a>
         </div>
 
         <!-- Add more item cards as needed -->
       </section>
 
-      <section class="item-grid" id="sweatshirts">
-        <h1>Sweatshirts & Hoodies</h1>
+      <section class="item-grid" id="dresses">
+        <h1>Dresses</h1>
         <div class="item-card">
-          <a href="item.html" onclick="passItemData(event, 3)">
-            <img src="./images/hoodi1.jpg" alt="">
+          <a href="item.html" onclick="passItemData(event, 0)">
+            <img src="./images/1.jpg" alt="">
           </a>
         </div>
         <div class="item-card">
-          <a href="item.html" onclick="passItemData(event, 4)">
-            <img src="./images/hoodi2.jpg" alt="">
+          <a href="item.html" onclick="passItemData(event, 1)">
+            <img src="./images/6.jpg" alt="">
           </a>
         </div>
         <div class="item-card">
-          <a href="item.html" onclick="passItemData(event, 5)">
-            <img src="./images/hoodi3.jpg" alt="">
+          <a href="item.html" onclick="passItemData(event, 2)">
+            <img src="./images/11.jpg" alt="">
           </a>
+        
           <!-- Add more item cards as needed -->
       </section>
 
-      <section class="item-grid" id="tshirts">
-        <h1>T-shirts</h1>
+      <section class="item-grid" id="tops">
+        <h1>Tops & Bodysuits</h1>
         <div class="item-card">
-          <a href="item.html" onclick="passItemData(event, 6)">
-            <img src="./images/tshirt1.jpg" alt="">
+          <a href="item.html" onclick="passItemData(event, 24)">
+            <img src="./images/top1.jpg" alt="">
           </a>
         </div>
         <div class="item-card">
-          <a href="item.html" onclick="passItemData(event, 12)">
-            <img src="./images/tshirt2.jpg" alt="">
+          <a href="item.html" onclick="passItemData(event, 25)">
+            <img src="./images/top2.jpg" alt="">
           </a>
         </div>
         <div class="item-card">
-          <a href="item.html" onclick="passItemData(event, 13)">
-            <img src="./images/tshirt3.jpg" alt="">
+          <a href="item.html" onclick="passItemData(event, 26)">
+            <img src="./images/top3.jpg" alt="">
           </a>
+        
           <!-- Add more item cards as needed -->
       </section>
 
       <section class="item-grid" id="jeans">
         <h1>Jeans</h1>
         <div class="item-card">
-          <a href="item.html" onclick="passItemData(event, 7)">
-            <img src="./images/jeans1.jpg" alt="">
+          <a href="item.html" onclick="passItemData(event, 27)">
+            <img src="./images/womenjeans1.jpg" alt="">
           </a>
         </div>
         <div class="item-card">
-          <a href="item.html" onclick="passItemData(event, 14)">
-            <img src="./images/jeans2.jpg" alt="">
+          <a href="item.html" onclick="passItemData(event, 28)">
+            <img src="./images/womenjeans2.jpg" alt="">
           </a>
         </div>
         <div class="item-card">
-          <a href="item.html" onclick="passItemData(event, 15)">
-            <img src="./images/jeans3.jpg" alt="">
+          <a href="item.html" onclick="passItemData(event, 29)">
+            <img src="./images/womenjeans3.jpg" alt="">
           </a>
+        
+          <!-- Add more item cards as needed -->
+      </section>
+
+      <section class="item-grid" id="hoodis">
+        <h1>Sweatshirts & Hoodies</h1>
+        <div class="item-card">
+          <a href="item.html" onclick="passItemData(event, 30)">
+            <img src="./images/womenhoodi1.jpg" alt="">
+          </a>
+        </div>
+        <div class="item-card">
+          <a href="item.html" onclick="passItemData(event, 31)">
+            <img src="./images/womenhoodi2.jpg" alt="">
+          </a>
+        </div>
+        <div class="item-card">
+          <a href="item.html" onclick="passItemData(event, 32)">
+            <img src="./images/womenhoodi3.jpg" alt="">
+          </a>
+        
+          <!-- Add more item cards as needed -->
+      </section>
+
+      <section class="item-grid" id="skirts">
+        <h1>Skirts</h1>
+        <div class="item-card">
+          <a href="item.html" onclick="passItemData(event, 33)">
+            <img src="./images/skirt1.jpg" alt="">
+          </a>
+        </div>
+        <div class="item-card">
+          <a href="item.html" onclick="passItemData(event, 34)">
+            <img src="./images/skirt2.jpg" alt="">
+          </a>
+        </div>
+        <div class="item-card">
+          <a href="item.html" onclick="passItemData(event, 35)">
+            <img src="./images/skirt3.jpg" alt="">
+          </a>
+        
           <!-- Add more item cards as needed -->
       </section>
 
       <section class="item-grid" id="shorts">
         <h1>Shorts</h1>
-        <div class="item-card">
-          <a href="item.html" onclick="passItemData(event, 8)">
-            <img src="./images/shorts1.jpg" alt="">
-          </a>
-        </div>
-        <div class="item-card">
-          <a href="item.html" onclick="passItemData(event, 16)">
-            <img src="./images/short2.jpg" alt="">
-          </a>
-        </div>
-        <div class="item-card">
-          <a href="item.html" onclick="passItemData(event, 17)">
-            <img src="./images/short3.jpg" alt="">
-          </a>
-          <!-- Add more item cards as needed -->
-      </section>
-
-      <section class="item-grid" id="shirts">
-        <h1>Shirts</h1>
-        <div class="item-card">
-          <a href="item.html" onclick="passItemData(event, 9)">
-            <img src="./images/shirt1.jpg" alt="">
-          </a>
-        </div>
-        <div class="item-card">
-          <a href="item.html" onclick="passItemData(event, 18)">
-            <img src="./images/shirt2.jpg" alt="">
-          </a>
-        </div>
-        <div class="item-card">
-          <a href="item.html" onclick="passItemData(event, 19)">
-            <img src="./images/shirt3.jpg" alt="">
-          </a>
-          <!-- Add more item cards as needed -->
-      </section>
-
-      <section class="item-grid" id="jackets">
-        <h1>Jackets</h1>
         <div class="item-card">
           <a href="item.html" onclick="passItemData(event, 10)">
             <img src="./images/jacket1.jpg" alt="">
@@ -253,8 +254,8 @@
           <!-- Add more item cards as needed -->
       </section>
 
-      <section class="item-grid" id="swimwear">
-        <h1>Swimwear</h1>
+      <section class="item-grid" id="suits">
+        <h1>Suits</h1>
         <div class="item-card">
           <a href="item.html" onclick="passItemData(event, 11)">
             <img src="./images/siwm1.jpg" alt="">
@@ -272,11 +273,9 @@
           <!-- Add more item cards as needed -->
       </section>
 
-
-
-
-
     </div>
+  </section>
+    
   </section>
 
 
@@ -304,12 +303,18 @@
         </div>
       </div>
     </div>
-</footer>
-      <script src="/Script/item.js"></script>
-      <script src="../Script/womenPageScript.js"></script>      
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-      <script src="../Script/auth.js" type="module"></script>
-      <script src="../Script/check.js" type="module"></script>
+  </footer>
+
+
+  <script src="/Script/item.js"></script>
+  <script src="../Script/womenPageScript.js"></script>
+  
+  <script src="../Script/Homepagescript.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="../Script/auth.js" type="module"></script>
+  <script src="../Script/check.js" type="module"></script>
 </body>
 
 </html>
