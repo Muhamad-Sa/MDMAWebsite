@@ -163,18 +163,33 @@ nav ul {
 }
 
 /* Button to toggle slider */
+/* CSS */
 #toggleSlider {
     position: absolute;
     top: 50%;
-    left: 100%;
+    left: 112%;
     transform: translate(-50%, -50%);
     font-size: 24px;
     cursor: pointer;
     background-color: #333;
-    color: white;
+    color: #ffcc00;
     border: none;
-    z-index: 1100; /* Ensure it stays above the slider */
+    z-index: 1100;
+    padding: 10px 20px;
+    border-radius: 5px;
+   
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+#toggleSlider:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+
+
 
 /* Dropdown style */
 .dropdown {
@@ -364,7 +379,6 @@ nav ul {
     height: 55vh;
   }
 
-  .carousel-indicators
-  {
-    height: 50vh;
-  }
+  
+
+  
