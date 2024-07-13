@@ -98,3 +98,14 @@ function passItemData(event, itemId) {
         .catch(error => console.error('Error fetching data:', error));
 }
 
+
+
+
+
+
+
+
+
+
+
+

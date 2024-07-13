@@ -1,56 +1,44 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const cartItems = document.querySelectorAll('.cart-item');
-    const totalItemsElement = document.getElementById('total-items');
-    const totalPriceElement = document.getElementById('total-price');
-    let totalItems = 0;
-    let totalPrice = 0.0;
+document.addEventListener('DOMContentLoaded', function() {
+    const cartItemsContainer = document.getElementById('cart-items');
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    // Update totals
-    const updateTotals = () => {
-        totalItemsElement.textContent = totalItems;
-        totalPriceElement.textContent = totalPrice.toFixed(2);
-    };
+    // Function to generate HTML for each cart item
+    function renderCartItems() {
+        cartItemsContainer.innerHTML = ''; // Clear existing content
 
-    // Update item quantity
-    const updateQuantity = (item, delta) => {
-        const input = item.querySelector('input[type="number"]');
-        let quantity = parseInt(input.value) + delta;
-        if (quantity < 1) quantity = 1;
-        input.value = quantity;
+        cart.forEach((item, index) => {
+            // Create elements for item details
+            const itemDiv = document.createElement('div');
+            itemDiv.classList.add('cart-item');
 
-        const price = parseFloat(item.querySelector('p').textContent.replace('Price: $', ''));
-        totalPrice += delta * price;
-        updateTotals();
-    };
+            const itemName = document.createElement('h3');
+            itemName.textContent = item.itemName;
 
-    // Initialize cart items
-    cartItems.forEach(item => {
-        const quantityInput = item.querySelector('input[type="number"]');
-        const price = parseFloat(item.querySelector('p').textContent.replace('Price: $', ''));
-        const quantity = parseInt(quantityInput.value);
+            const itemPrice = document.createElement('p');
+            itemPrice.textContent = item.itemPrice;
 
-        totalItems += quantity;
-        totalPrice += price * quantity;
+            const itemDescription = document.createElement('p');
+            itemDescription.textContent = item.itemDescription;
 
-        item.querySelector('.decrease').addEventListener('click', () => {
-            updateQuantity(item, -1);
-            totalItems -= 1;
+            // Append elements to itemDiv
+            itemDiv.appendChild(itemName);
+            itemDiv.appendChild(itemPrice);
+            itemDiv.appendChild(itemDescription);
+
+            // Append itemDiv to cartItemsContainer
+            cartItemsContainer.appendChild(itemDiv);
         });
+    }
 
-        item.querySelector('.increase').addEventListener('click', () => {
-            updateQuantity(item, 1);
-            totalItems += 1;
-        });
+    // Call renderCartItems to initially display cart items
+    renderCartItems();
 
-        item.querySelector('.remove-item').addEventListener('click', () => {
-            const itemPrice = price * parseInt(quantityInput.value);
-            totalItems -= parseInt(quantityInput.value);
-            totalPrice -= itemPrice;
+    // Function to update cart count in navbar
+    function updateCartCount() {
+        const cartCountElement = document.getElementById('cart-count');
+        cartCountElement.textContent = cart.length;
+    }
 
-            item.remove();
-            updateTotals();
-        });
-    });
-
-    updateTotals();
+    // Update cart count on page load
+    updateCartCount();
 });
