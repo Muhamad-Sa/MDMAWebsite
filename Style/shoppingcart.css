@@ -26,7 +26,7 @@ header {
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 80px; /* Ensure content below header */
+    margin-bottom: 80px; /* To make content below header */
 }
 
 .logo {
@@ -97,7 +97,7 @@ nav {
 
 
 main {
-    padding:100px; /* Padding around main content */
+    padding: 100px; /* Padding around main content */
 }
 
 
@@ -152,25 +152,10 @@ main {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    background-color: #f9f9f9;
+    background-color: #f18614;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
     position: relative;
-}
-
-.cart-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.cart-item img {
-    max-width: 100px;
-    margin-right: 20px;
-    border-radius: 5px;
-}
-
-.cart-item-info {
-    flex: 2;
 }
 
 .cart-item h3 {
@@ -179,17 +164,20 @@ main {
     margin: 0 0 10px 0;
 }
 
-
-.cart-item-remove {
-    font-size: 1.5rem;
+.remove-item {
+    font-size: 1.2rem;
     color: #ff6347;
     cursor: pointer;
     transition: color 0.2s;
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
 
-.cart-item-remove:hover {
+.remove-item:hover {
     color: #e63946;
 }
+
 
 /* Footer Styling */
 .site-footer {
@@ -278,14 +266,13 @@ main {
 }
 
 
-
 /* Search for item style */
 
 .search-container {
     position: relative;
-  }
-  
-  .search-results {
+}
+
+.search-results {
     display: none;
     position: absolute;
     top: 100%;
@@ -296,23 +283,22 @@ main {
     z-index: 1000;
     max-height: 200px;
     overflow-y: auto;
-  }
-  
-  .search-results a {
+}
+
+.search-results a {
     display: flex;
     align-items: center;
     padding: 10px;
     text-decoration: none;
     color: black;
-  }
-  
-  .search-results a:hover {
+}
+
+.search-results a:hover {
     background-color: #f0f0f0;
-  }
-  
-  .search-results img {
+}
+
+.search-results img {
     width: 50px;
     height: 50px;
     margin-right: 10px;
-  }
-  
+}
