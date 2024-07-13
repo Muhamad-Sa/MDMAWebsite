@@ -302,3 +302,45 @@ main {
     height: 50px;
     margin-right: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 100px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    padding: 10px 13px;
+}
+
+.dropdown-content li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content li a:hover {
+    background-color: #ff9900;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

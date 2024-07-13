@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const cartItemsContainer = document.getElementById('cart-items');
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const checkoutButton = document.getElementById('checkout-button');
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
     // Function to generate HTML for each cart item
     function renderCartItems() {
@@ -15,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
             itemName.textContent = item.itemName;
 
             const itemPrice = document.createElement('p');
-            itemPrice.textContent = item.itemPrice;
+            itemPrice.textContent = `$${item.itemPrice}`;
 
             const itemDescription = document.createElement('p');
             itemDescription.textContent = item.itemDescription;
@@ -30,8 +31,33 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Call renderCartItems to initially display cart items
-    renderCartItems();
+    // Function to calculate total price
+    function calculateTotalPrice() {
+        let totalPrice = 0;
+        cart.forEach((item) => {
+            const price = parseFloat(item.itemPrice);
+            if (!isNaN(price)) {
+                totalPrice += price;
+            } else {
+                console.error(`Invalid itemPrice: ${item.itemPrice}`);
+            }
+        });
+        return totalPrice;
+    }
+
+    // Function to handle checkout button click
+    function handleCheckout() {
+        const totalPrice = calculateTotalPrice();
+        alert(`Checkout successful!\nTotal Price: $${totalPrice.toFixed(2)}`); // Display total price with two decimal places
+        
+        // Empty the cart and update local storage
+        cart = [];
+        localStorage.setItem('cart', JSON.stringify(cart));
+        
+        // Refresh the displayed cart items
+        renderCartItems();
+        updateCartCount();
+    }
 
     // Function to update cart count in navbar
     function updateCartCount() {
@@ -39,6 +65,12 @@ document.addEventListener('DOMContentLoaded', function() {
         cartCountElement.textContent = cart.length;
     }
 
+    // Call renderCartItems to initially display cart items
+    renderCartItems();
+
     // Update cart count on page load
     updateCartCount();
+
+    // Event listener for checkout button click
+    checkoutButton.addEventListener('click', handleCheckout);
 });
