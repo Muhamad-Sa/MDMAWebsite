@@ -216,17 +216,19 @@ nav ul {
 
 
 
+
 #categories {
     display: flex;
-    justify-content: space-around;
-    margin: 2rem 0;
-    padding: 0 2rem;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    gap: 1rem; /* Adjusts space between the items */
+    padding: 2rem; /* Adds some padding around the section */
 }
 
 .category {
     flex: 1;
-    margin: 0 1rem;
+    margin: 1rem;
     padding: 2rem;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -235,43 +237,48 @@ nav ul {
     background-size: cover;
     background-position: center;
     height: 300px;
+    max-width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .category#men {
     background: url('/Html/images/mans.jpg') no-repeat center center/cover;
+    max-width: 600px; /* Ensure a max-width */
 }
 
 .category#women {
     background: url('/Html/images/women.jpg') no-repeat center center/cover;
+    max-width: 600px; /* Ensure a max-width */
 }
 
-.category#kids {
-    background: url('/Html/images/kids.jpg') no-repeat center center/cover;
-}
-
-.men
-{
+.men, .women {
     flex: 1;
     height: 300px;
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.women
-{
-    flex: 1;
-    height: 300px;
-   
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .category {
+        width: 100%;
+    }
 }
 
-.kids
-{
-    flex: 1;
-    
-    height: 300px;
-  
+@media (max-width: 768px) {
+    #categories {
+        flex-direction: column;
+        align-items: center;
+    }
+    .category {
+        width: 100%;
+    }
 }
+
+
+
 
 
 
