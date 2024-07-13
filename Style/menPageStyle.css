@@ -317,12 +317,6 @@ nav ul {
     display: none;
 }
 
-
-
-
-
-
-
 /* Search for item style */
 
 .search-container {
@@ -360,3 +354,17 @@ nav ul {
     margin-right: 10px;
   }
   
+
+  .sectionOne{
+    height: 55vh;
+  }
+
+  .carousel-inner
+  {
+    height: 55vh;
+  }
+
+  .carousel-indicators
+  {
+    height: 50vh;
+  }
