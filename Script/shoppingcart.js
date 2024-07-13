@@ -35,11 +35,12 @@ document.addEventListener('DOMContentLoaded', function() {
     function calculateTotalPrice() {
         let totalPrice = 0;
         cart.forEach((item) => {
-            const price = parseFloat(item.itemPrice);
-            if (!isNaN(price)) {
-                totalPrice += price;
+            // Extract numeric value from itemPrice string (assuming it's in the format "EGP 1,090")
+            const numericPrice = parseFloat(item.itemPrice.replace(/[^\d.-]/g, ''));
+            if (!isNaN(numericPrice)) {
+                totalPrice += numericPrice;
             } else {
-                console.error(`Invalid itemPrice: ${item.itemPrice}`);
+                console.error(`Invalid itemPrice for item: ${item.itemName}`);
             }
         });
         return totalPrice;
@@ -73,4 +74,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Event listener for checkout button click
     checkoutButton.addEventListener('click', handleCheckout);
+
+    // Debugging output
+    console.log('Initial Cart Items:', cart);
+    console.log('Initial Total Price:', calculateTotalPrice());
 });
