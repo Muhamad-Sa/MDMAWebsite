@@ -251,20 +251,31 @@ nav ul {
     background: url('/Html/images/kids.jpg') no-repeat center center/cover;
 }
 
-.category h2 {
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
+.men
+{
+    flex: 1;
+    height: 300px;
+  
 }
 
-.category p {
-    display: none;
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
+.women
+{
+    flex: 1;
+    height: 300px;
+   
 }
 
-.category.active p {
-    display: block;
+.kids
+{
+    flex: 1;
+    
+    height: 300px;
+  
 }
+
+
+
+
 
 .category:hover {
     transform: translateY(-10px);
