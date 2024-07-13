@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (itemData) {
         document.getElementById('item-name').textContent = itemData.name;
         document.getElementById('item-price').textContent = itemData.price;
-        document.getElementById('item-colors').textContent = itemData.colors + ' Colours';
         document.getElementById('model-desc').textContent = itemData.modelDesc;
         document.getElementById('ref-num').textContent = itemData.refNum;
         document.getElementById('item-description').textContent = itemData.description;
