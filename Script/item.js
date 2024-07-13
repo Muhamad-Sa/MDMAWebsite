@@ -104,3 +104,89 @@ document.addEventListener('DOMContentLoaded', function() {
       })
       .catch(error => console.error('Error fetching items:', error));
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     // Initialize cart from localStorage or start with an empty array
+//     let cart = JSON.parse(localStorage.getItem('cart')) || [];
+//     updateCartCount();
+
+//     // Add event listener to the "Add to my basket" button
+//     document.querySelector('.add-to-basket').addEventListener('click', function() {
+//         addToCart();
+//     });
+
+//     function addToCart() {
+//         // For now, we'll just add a placeholder item to the cart array
+//         const item = { id: 0, name: "Placeholder Item" };
+//         cart.push(item);
+//         localStorage.setItem('cart', JSON.stringify(cart));
+//         updateCartCount();
+//     }
+
+//     function updateCartCount() {
+//         const cartCountElement = document.getElementById('cart-count');
+//         cartCountElement.textContent = cart.length;
+//     }
+// });
+
+
+
+
+
+
+
+
+// Function to update cart count in navbar
+function updateCartCount() {
+  const cartCountElement = document.getElementById('cart-count');
+  const cart = JSON.parse(localStorage.getItem('cart')) || [];
+  cartCountElement.textContent = cart.length;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  updateCartCount();
+  document.querySelector('.add-to-basket').addEventListener('click', function() {
+      addToCart();
+  });
+
+  function addToCart() {
+      // For now, we'll just add a placeholder item to the cart array
+      const itemName = document.getElementById('item-name').textContent.trim();
+      const itemPrice = document.getElementById('item-price').textContent.trim();
+      const itemDescription = document.getElementById('item-description').textContent.trim();
+      const item = { itemName, itemPrice, itemDescription};
+      cart.push(item);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      updateCartCount(); // Update cart count after adding item
+  }
+});
+
+

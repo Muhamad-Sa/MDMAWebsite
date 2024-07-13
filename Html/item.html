@@ -27,8 +27,8 @@
             <a href="Login.html" id="auth-link">Login/Register</a>
         </div>
         <div class="nav-links shopping-cart">
-            <a href="shoppingcart.html">Cart (0)</a>
-        </div>
+          <a href="shoppingcart.html">Cart (<span id="cart-count">0</span>)</a>
+      </div>
         <button class="burger-menu" aria-label="Toggle navigation">
             ☰
         </button>
@@ -64,9 +64,7 @@
                   <option value="xl">XL</option>
                 </select>
             </div>
-            <button type="submit" class="add-to-basket">
-              Add to my basket
-            </button>
+            <button type="button" class="add-to-basket" data-item-id="0">Add to my basket</button>
             </form>
             <div class="product-meta">
                 <div class="ref">
