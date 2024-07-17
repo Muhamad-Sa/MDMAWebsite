@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
 //Search by name in search bar
 
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("../Html/data.json")
+  fetch("data.json")
     .then((response) => response.json())
     .then((items) => {
       const searchInput = document.getElementById("searchInput");
