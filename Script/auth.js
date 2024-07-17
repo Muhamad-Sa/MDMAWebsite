@@ -40,7 +40,7 @@ export const login = async (email, password) => {
         .then((userCredential) => {
             const user = userCredential.user;
             alert('User signed in successfully');
-            window.location.href = "../Html/home.html";
+            window.location.href = "../index.html";
         })
         .catch((error) => {
             const errorCode = error.code;
@@ -55,7 +55,7 @@ export const logout = async () => {
     try {
         await signOut(auth);
         alert('User logged out successfully');
-        window.location.href = '../Html/home.html';
+        window.location.href = '../index.html';
     } catch (error) {
         alert(`Error: ${error.message}`);
         console.error('Error:', error.code, error.message);

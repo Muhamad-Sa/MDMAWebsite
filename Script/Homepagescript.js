@@ -36,21 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Function to send data to item page
 
-function passItemData(event, itemId) {
-  event.preventDefault();
 
-  fetch("data.json")
-    .then((response) => response.json())
-    .then((data) => {
-      const itemData = data[itemId]; // Get item data by ID
 
-      // Store item data in sessionStorage for use in item.html
-      sessionStorage.setItem("itemData", JSON.stringify(itemData));
 
-      // Navigate to item.html
-      window.location.href = "../Html/item.html";
-    })
-    .catch((error) => console.error("Error fetching data:", error));
-}
+
