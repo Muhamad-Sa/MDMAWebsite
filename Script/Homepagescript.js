@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (results.length > 0) {
           results.forEach((item) => {
             const resultItem = document.createElement("a");
-            resultItem.href = `item.html?id=${item.id}`; // Link to item page
+            resultItem.href = `../Html/item.html?id=${item.id}`; // Link to item page
             resultItem.innerHTML = `<img src="${item.images[0]}" alt="${item.name}"> ${item.name}`;
             resultItem.addEventListener("click", function (event) {
               event.preventDefault();
@@ -95,7 +95,7 @@ function passItemData(event, itemId) {
       sessionStorage.setItem("itemData", JSON.stringify(itemData));
 
       // Navigate to item.html
-      window.location.href = "item.html";
+      window.location.href = "../Html/item.html";
     })
     .catch((error) => console.error("Error fetching data:", error));
 }
