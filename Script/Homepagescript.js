@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
       .catch(error => console.error('Error fetching items:', error));
   });
 
-  
+// Function to send data to item page 
   
 function passItemData(event, itemId) {
     event.preventDefault();
@@ -97,15 +97,3 @@ function passItemData(event, itemId) {
         })
         .catch(error => console.error('Error fetching data:', error));
 }
-
-
-
-
-
-
-
-
-
-
-
-
