@@ -216,10 +216,10 @@ main {
   }
 
   .cart-item input {
-    height: 60px;
+    height: 40px;
     max-width: 80px;
     width: 80px;
-    font-size: 10px;
+    font-size: 15px;
     color: black;
     text-align: center;
     margin:0 10px 0 0;
