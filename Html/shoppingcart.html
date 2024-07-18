@@ -1,77 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopping Cart - MDMA FASHION</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="../Style/shoppingcart.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../Style/shoppingcart.css" />
+  </head>
+  <body>
     <header>
-        <div class="logo">MDMA FASHION</div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="user.html">Profile</a></li>
-                <li class="nav-links dropdown">
-                    <a href="#">Categories</a>
-                    <ul class="dropdown-content">
-                        <li><a href="menPage.html">Men</a></li>
-                        <li><a href="womenPage.html">Women</a></li>
-                    </ul>
-                </li>
-                <li><a href="Contact.html">Contact</a></li>
+      <div class="logo">MDMA FASHION</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="user.html">Profile</a></li>
+          <li class="nav-links dropdown">
+            <a href="#">Categories</a>
+            <ul class="dropdown-content">
+              <li><a href="menPage.html">Men</a></li>
+              <li><a href="womenPage.html">Women</a></li>
             </ul>
-        </nav>
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Search for anything">
-            <div id="searchResults" class="search-results"></div>
-        </div>
-        <div class="user-account">
-            <a href="Login.html" id="auth-link">Login/Register</a>
-        </div>
-        <div class="shopping-cart">
-            <a href="shoppingcart.html">Cart (<span id="cart-count">0</span>)</a>
-        </div>
+          </li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for anything" />
+        <div id="searchResults" class="search-results"></div>
+      </div>
+      <div class="user-account">
+        <a href="Login.html" id="auth-link">Login/Register</a>
+      </div>
+      <div class="shopping-cart">
+        <a href="shoppingcart.html">Cart (<span id="cart-count">0</span>)</a>
+      </div>
     </header>
     <main>
-        <section id="hero">
-            <h1>Shopping Cart</h1>
-            <div id="cart-items">
-                <!-- Cart items will be dynamically generated here -->
-            </div>
-            <button id="checkout-button">Checkout</button>
-        </section>
+      <section id="hero">
+        <h1>Shopping Cart</h1>
+        <div id="cart-items">
+          <!-- Cart items will be dynamically generated here -->
+        </div>
+        <button id="checkout-button">Checkout</button>
+      </section>
     </main>
     <footer class="site-footer">
-        <div class="footer-container">
-            <div class="social-icons">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-youtube"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-medium"></i></a>
-            </div>
-            <div class="footer-logo">
-                <a href="#">MDMA FASHION</a>
-            </div>
-            <div class="footer-text">
-                <p>Copyright &copy; 2024 MDMA, Inc.</p>
-                <div class="footer-links">
-                    <a href="#">Legal Stuff</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Security</a>
-                    <a href="#">Website Accessibility</a>
-                    <a href="#">Manage Cookies</a>
-                </div>
-            </div>
+      <div class="footer-container">
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-medium"></i></a>
         </div>
+        <div class="footer-logo">
+          <a href="#">MDMA FASHION</a>
+        </div>
+        <div class="footer-text">
+          <p>Copyright &copy; 2024 MDMA, Inc.</p>
+          <div class="footer-links">
+            <a href="#">Legal Stuff</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Security</a>
+            <a href="#">Website Accessibility</a>
+            <a href="#">Manage Cookies</a>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="../Script/item.js"></script>
     <script src="../Script/shoppingcart.js"></script>
     <script src="../Script/auth.js" type="module"></script>
     <script src="../Script/check.js" type="module"></script>
-</body>
+  </body>
 </html>

@@ -1,279 +1,271 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
 
 :root {
-    --blue: #3498db;
-    --dark-blue: #2980b9;
-    --red: #e74c3c;
-    --dark-red: #c0392b;
-    --black: #333;
-    --white: #fff;
-    --light-bg: #eee;
-    --box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
-    --light-grey: rgb(211, 211, 211);
-    --dark-grey: rgb(169, 169, 169);
+  --blue: #3498db;
+  --dark-blue: #2980b9;
+  --red: #e74c3c;
+  --dark-red: #c0392b;
+  --black: #333;
+  --white: #fff;
+  --light-bg: #eee;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  --light-grey: rgb(211, 211, 211);
+  --dark-grey: rgb(169, 169, 169);
 }
 
 * {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
 }
 
 .update-profile {
-    background-image: url('../Html/images/img3.jpeg');
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+  background-image: url("../Html/images/img3.jpeg");
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 *::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 *::-webkit-scrollbar-track {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: var(--blue);
+  background-color: var(--blue);
 }
 
 .photo {
-    width: 200px;
-    height: 25px;
+  width: 200px;
+  height: 25px;
 }
 
 /*Edit profile*/
 .image-container {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-        }
- .photo {
-    max-width: 200px; /* Adjust as needed */
-     display: block;
-     border-radius: 50%; /* Rounded corners for circular image */
-        }
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.photo {
+  max-width: 200px; /* Adjust as needed */
+  display: block;
+  border-radius: 50%; /* Rounded corners for circular image */
+}
 .edit-overlay {
-    position: absolute;
-     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    border-radius: 50%;
-        }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 50%;
+}
 .edit-text {
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-        }
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
 .image-container:hover .edit-overlay {
-    opacity: 1;
-        }
+  opacity: 1;
+}
 #file-input {
-    display: none; /* Hide the file input initially */
-        }
+  display: none; /* Hide the file input initially */
+}
 
 .btn,
 .delete-btn {
-    width: 100%;
-    padding: 10px 30px;
-    color: var(--white);
-    display: block;
-    text-align: center;
-    cursor: pointer;
-    font-size: 20px;
-    margin-top: 10px;
-    border-radius: .5rem;
-    border: .2rem solid var(--white);
-    transition: all 0.2s ease;
+  width: 100%;
+  padding: 10px 30px;
+  color: var(--white);
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 10px;
+  border-radius: 0.5rem;
+  border: 0.2rem solid var(--white);
+  transition: all 0.2s ease;
 }
 
 .btn {
-    color: var(--white);
-    background-color: var(--black);
+  color: var(--white);
+  background-color: var(--black);
 }
 
 .btn:hover {
-    background-color: #e5c100;
+  background-color: #e5c100;
 }
 
 .delete-btn {
-    color: var(--white);
-    background-color: var(--black);
+  color: var(--white);
+  background-color: var(--black);
 }
 
 .delete-btn:hover {
-    background-color: #e5c100;
+  background-color: #e5c100;
 }
 
-
-
 .form-container {
-    min-height: 100vh;
-    background-color: var(--light-bg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+  min-height: 100vh;
+  background-color: var(--light-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .form-container form {
-    padding: 20px;
-    background-color: var(--white);
-    box-shadow: var(--box-shadow);
-    text-align: center;
-    width: 500px;
-    border-radius: 5px;
+  padding: 20px;
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  width: 500px;
+  border-radius: 5px;
 }
 
 .form-container form h3 {
-    margin-bottom: 10px;
-    font-size: 30px;
-    color: var(--black);
-    text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: var(--black);
+  text-transform: uppercase;
 }
 
 .form-container form .box {
-    width: 100%;
-    border-radius: 5px;
-    padding: 12px 14px;
-    font-size: 18px;
-    color: var(--black);
-    margin: 10px 0;
-    background-color: var(--light-bg);
+  width: 100%;
+  border-radius: 5px;
+  padding: 12px 14px;
+  font-size: 18px;
+  color: var(--black);
+  margin: 10px 0;
+  background-color: var(--light-bg);
 }
 
-
-
-
 .container {
-    min-height: 100vh;
-    background-color: var(--light-bg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+  min-height: 100vh;
+  background-color: var(--light-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .container .profile {
-    padding: 20px;
-    background-color: var(--white);
-    box-shadow: var(--box-shadow);
-    text-align: center;
-    width: 400px;
-    border-radius: 5px;
+  padding: 20px;
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  width: 400px;
+  border-radius: 5px;
 }
 
 .container .profile img {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 5px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
 }
 
 .container .profile h3 {
-    margin: 5px 0;
-    font-size: 20px;
-    color: var(--black);
+  margin: 5px 0;
+  font-size: 20px;
+  color: var(--black);
 }
 
 .container .profile p {
-    margin-top: 20px;
-    color: var(--black);
-    font-size: 20px;
+  margin-top: 20px;
+  color: var(--black);
+  font-size: 20px;
 }
 
 .container .profile p a {
-    color: var(--red);
+  color: var(--red);
 }
 
 .container .profile p a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .update-profile {
-    min-height: 100vh;
-    background-color: var(--light-bg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+  min-height: 100vh;
+  background-color: var(--light-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .update-profile form {
-    padding: 20px;
-    background-color: var(--white);
-    box-shadow: var(--box-shadow);
-    text-align: center;
-    width: 700px;
-    text-align: center;
-    border-radius: 5px;
+  padding: 20px;
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  width: 700px;
+  text-align: center;
+  border-radius: 5px;
 }
 
 .update-profile form img {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 5px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
 }
 
 .update-profile form .flex {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    gap: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 15px;
 }
 
 .update-profile form .flex .inputBox {
-    width: 49%;
+  width: 49%;
 }
 
 .update-profile form .flex .inputBox span {
-    text-align: left;
-    display: block;
-    margin-top: 15px;
-    font-size: 17px;
-    color: var(--black);
+  text-align: left;
+  display: block;
+  margin-top: 15px;
+  font-size: 17px;
+  color: var(--black);
 }
 
 .update-profile form .flex .inputBox .box {
-    width: 100%;
-    border-radius: 10px;
-    background-color: var(--light-bg);
-    padding: 12px 14px;
-    font-size: 17px;
-    color: var(--black);
-    margin-top: 5px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: var(--light-bg);
+  padding: 12px 14px;
+  font-size: 17px;
+  color: var(--black);
+  margin-top: 5px;
 }
 
-
-
-
-@media (max-width:650px) {
-    .update-profile form .flex {
-        flex-wrap: wrap;
-        gap: 0;
-    }
-    .update-profile form .flex .inputBox {
-        width: 100%;
-    }
+@media (max-width: 650px) {
+  .update-profile form .flex {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .update-profile form .flex .inputBox {
+    width: 100%;
+  }
 }

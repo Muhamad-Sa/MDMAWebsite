@@ -6,7 +6,7 @@ function passItemData(event, itemId) {
   fetch("../Html/data.json")
     .then((response) => response.json())
     .then((data) => {
-      const itemData = data.find(item => item.id === itemId); // Get item data by ID
+      const itemData = data.find((item) => item.id === itemId); // Get item data by ID
 
       if (itemData) {
         // Store item data in sessionStorage for use in item.html
@@ -21,15 +21,6 @@ function passItemData(event, itemId) {
     .catch((error) => console.error("Error fetching data:", error));
 }
 
-
-
-
-
-
-
-
-
-
 // Update Cart Count in Navbar
 
 function updateCartCount() {
@@ -42,10 +33,12 @@ function updateCartCount() {
 
 function addToCart() {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
-  
+
   const itemName = document.getElementById("item-name")?.textContent.trim();
   const itemPrice = document.getElementById("item-price")?.textContent.trim();
-  const itemDescription = document.getElementById("item-description")?.textContent.trim();
+  const itemDescription = document
+    .getElementById("item-description")
+    ?.textContent.trim();
 
   if (itemName && itemPrice && itemDescription) {
     const item = { itemName, itemPrice, itemDescription };
@@ -57,13 +50,7 @@ function addToCart() {
   }
 }
 
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
-  
   // Retrieve and display item data from sessionStorage
   const itemData = JSON.parse(sessionStorage.getItem("itemData"));
 
@@ -72,7 +59,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("item-price").textContent = itemData.price;
     document.getElementById("model-desc").textContent = itemData.modelDesc;
     document.getElementById("ref-num").textContent = itemData.refNum;
-    document.getElementById("item-description").textContent = itemData.description;
+    document.getElementById("item-description").textContent =
+      itemData.description;
 
     const imageContainer = document.getElementById("image-container");
     if (imageContainer) {
@@ -88,12 +76,8 @@ document.addEventListener("DOMContentLoaded", function () {
     console.error("No item data found in sessionStorage.");
   }
 
-
-
   // Initialize cart count
   updateCartCount();
-  
-
 
   // Add event listener for adding to cart
   const addToBasketButton = document.querySelector(".add-to-basket");
@@ -103,7 +87,6 @@ document.addEventListener("DOMContentLoaded", function () {
     console.error("Add to basket button not found.");
   }
 
-  
   // Search functionality
   fetch("../Html/data.json")
     .then((response) => response.json())

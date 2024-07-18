@@ -1,57 +1,83 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MDMA - Register</title>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <link rel="stylesheet" href="../Style/Authentication.css">
-</head>
-<body>
-	<div class="container">
-		<div class="forms">
-			<div class="form login">
-				<span class="title">Signup</span>
-				<form id="signupForm" action="#">
-					<div class="input-feild">
-                        <input type="text" id="name" placeholder="Enter your Name" required>
-					    <i class="uil uil-user"></i>	    
-					</div>
-					<div class="input-feild">
-                        <input type="text"id="email" placeholder="Enter your Email" required>
-					    <i class="uil uil-envelope"></i>	    
-					</div>
-					<div class="input-feild">
-                        <input type="password" id="password" class="password"  placeholder="Create a password" required>
-					    <i class="uil uil-lock icon"></i>
-					</div>
-					<div class="input-feild">
-                        <input type="password" id="confirmPassword"  class="password"  placeholder="Confirm a password" required>
-					    <i class="uil uil-lock icon"></i>
-					    <i class="uil uil-eye-slash showHidePw"></i>	    
-					</div>
-					<div class="checkbox-text">
-						<div class="checkbox-content">
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link rel="stylesheet" href="../Style/Authentication.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms">
+        <div class="form login">
+          <span class="title">Signup</span>
+          <form id="signupForm" action="#">
+            <div class="input-feild">
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your Name"
+                required
+              />
+              <i class="uil uil-user"></i>
+            </div>
+            <div class="input-feild">
+              <input
+                type="text"
+                id="email"
+                placeholder="Enter your Email"
+                required
+              />
+              <i class="uil uil-envelope"></i>
+            </div>
+            <div class="input-feild">
+              <input
+                type="password"
+                id="password"
+                class="password"
+                placeholder="Create a password"
+                required
+              />
+              <i class="uil uil-lock icon"></i>
+            </div>
+            <div class="input-feild">
+              <input
+                type="password"
+                id="confirmPassword"
+                class="password"
+                placeholder="Confirm a password"
+                required
+              />
+              <i class="uil uil-lock icon"></i>
+              <i class="uil uil-eye-slash showHidePw"></i>
+            </div>
+            <div class="checkbox-text">
+              <div class="checkbox-content">
+                <input type="checkbox" id="logCheck" />
+                <label for="logCheck" class="text"
+                  >i accept all terms & conditions</label
+                >
+              </div>
+            </div>
+            <div class="input-feild button">
+              <input type="button" id="signup-btn" value="Signup" />
+            </div>
+          </form>
 
-							<input type="checkbox" id="logCheck">
-							<label for="logCheck" class="text">i accept all terms & conditions</label>
-						</div>
-					</div>
-					<div class="input-feild button">
-                        <input type="button" id="signup-btn" value="Signup">
-					</div>
-				</form>
-
-				<div class="login-signup">
-					<span class="text"> Already have an account?
-						<a href="Login.html" class="text login-text">Login now</a>
-					</span>
-				</div>
-			</div>
-		</div>
-
-	</div>
-	<script src="../Script/auth.js" type="module"></script>
-	<script src="../Script/Authentication.js" type="module"></script>
-</body>
+          <div class="login-signup">
+            <span class="text">
+              Already have an account?
+              <a href="Login.html" class="text login-text">Login now</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../Script/auth.js" type="module"></script>
+    <script src="../Script/Authentication.js" type="module"></script>
+  </body>
 </html>

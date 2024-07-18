@@ -1,3 +1,3 @@
-import {checkAuthState} from './auth.js';
+import { checkAuthState } from "./auth.js";
 
-window.onload =  () => checkAuthState();
+window.onload = () => checkAuthState();
