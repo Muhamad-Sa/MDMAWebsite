@@ -133,7 +133,7 @@ main {
   margin-bottom: 50px;
 }
 
-#hero button {
+#hero > button {
   margin-top: 50px;
   padding: 1.2rem 2.5rem;
   font-size: 1.3rem;
@@ -193,6 +193,38 @@ main {
   text-align: center;
   margin-top: 10px;
 }
+
+.cart-item label {
+    max-width: 200px;
+    width: 200px;
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .cart-item button {
+    padding: 1.2rem 2.5rem;
+    font-size: 1.3rem;
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    animation: fadeIn 2s ease-in-out;
+    text-align: center;
+  }
+
+  .cart-item input {
+    height: 60px;
+    max-width: 80px;
+    width: 80px;
+    font-size: 10px;
+    color: black;
+    text-align: center;
+    margin:0 10px 0 0;
+  }
+
 
 .remove-item {
   font-size: 1.2rem;
