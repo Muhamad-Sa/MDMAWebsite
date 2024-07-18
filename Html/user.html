@@ -13,37 +13,32 @@
 
   <body>
     <header>
-      <div class="logo">MDMA FASHION</div>
-      <nav>
-        <ul>
-          <li class="nav-links"><a href="../index.html">Home</a></li>
-          <li class="nav-links"><a href="user.html">Profile</a></li>
-          <li class="nav-links dropdown">
-            <a href="#">Categories</a>
-            <ul class="dropdown-content">
-              <li><a href="menPage.html">Men</a></li>
-              <li><a href="womenPage.html">Women</a></li>
-            </ul>
-          </li>
-          <li class="nav-links"><a href="Contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="search-container">
-        <input type="text" placeholder="Search for anything" />
-      </div>
-      <div class="nav-links user-account">
-        <a href="Login.html" id="auth-link">Login/Register</a>
-      </div>
-      <div class="shopping-cart">
-        <a href="shoppingcart.html">Cart (<span id="cart-count">0</span>)</a>
-      </div>
-      <button class="burger-menu" aria-label="Toggle navigation">☰</button>
-      <div class="burger-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </header>
+        <div class="logo">MDMA FASHION</div>
+        <nav>
+          <ul>
+            <li class="nav-links"><a href="../index.html">Home</a></li>
+            <li class="nav-links"><a href="user.html">Profile</a></li>
+            <li class="nav-links dropdown">
+              <a href="#">Categories</a>
+              <ul class="dropdown-content">
+                <li><a href="menPage.html">Men</a></li>
+                <li><a href="womenPage.html">Women</a></li>
+              </ul>
+            </li>
+            <li class="nav-links"><a href="Contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search for anything" />
+          <div id="searchResults" class="search-results"></div>
+        </div>
+        <div class="nav-links user-account">
+          <a href="Login.html" id="auth-link">Login/Register</a>
+        </div>
+        <div class="nav-links shopping-cart">
+          <a href="shoppingcart.html">Cart (<span id="cart-count">0</span>)</a>
+        </div>
+      </header>
     <div class="update-profile">
       <form
         action=""
